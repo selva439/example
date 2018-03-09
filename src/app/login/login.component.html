@@ -1,0 +1,57 @@
+<div [ngSwitch]="loading" class="full-height">
+    <div *ngSwitchCase="true" style="margin-top:15%;margin-bottom:0">
+      <loading-indicator></loading-indicator>
+    </div>
+    <div *ngSwitchCase="false">
+<div class="container">
+  <div class="row">
+      <div class="col-md-5 col-md-offset-3">
+          <div class="login-panel panel panel-default">
+              <div class="panel-heading">
+                  <img src="../assets/images/finger.png" class="img-responsive" style="margin-bottom: 10px" />
+                  <img src="../assets/images/logo_voter_portal.png" class="img-responsive" />
+                  <img src="../assets/images/shader.png" class="img-responsive" />
+
+              </div>
+              <div class="panel-body">
+              <ul id="errors"></ul>
+                  <!-- <form role="form" action="/api/voterpulse/users/login" method = "post"> -->
+                    <form [formGroup]="loginForm">
+                      <fieldset>
+                          <div class="form-group ui-g ui-fluid">
+                              <div class="ui-md-5">
+                                  <div class="ui-inputgroup">
+                                      <!-- <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span> -->
+                                      <input type="text" [(ngModel)]="user.UserName" name="UserName" [ngModelOptions]="{standalone: true}"
+                                       pInputText placeholder="Username">         
+                                  </div>
+                                  <!-- <input class="form-control" placeholder="Mobile Number" name="mobile" id="mobile" type="tel" maxlength="10" autofocus> -->
+                              </div>
+                              <div class="ui-md-5">
+                                  <div class="ui-inputgroup">
+                                      <!-- <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span> -->
+                                      <input type="passowrd" [(ngModel)]="user.Password" name="Password" [ngModelOptions]="{standalone: true}"
+                                      pPassword  placeholder="Password">         
+                                  </div>
+                                  <!-- <input class="form-control" placeholder="Password" id="pwd" name="password" type="password" value=""> -->
+                              </div>
+                              <div class="ui-md-2">
+                                  <button pButton type="button" (click)="loginUser(user)" label="Go"  class="ui-button-warning"></button>
+                                   <!-- <input type="button" class="btn btn-block btn-warning " name="Go" id="go" value="Go" onClick="loginuser();"> onClick="loginuser();"> -->
+                                  </div> 
+                          </div>
+                          
+                          <!-- Change this to a button or input when using this as a form -->
+                          
+                      </fieldset>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</div>
+
+</div>
+  
+</div>

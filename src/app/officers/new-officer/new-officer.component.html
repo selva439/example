@@ -1,0 +1,48 @@
+<div class="modal-body">
+  <form  [formGroup]="officerForm">
+ 
+    <div class="form-group row">
+        <input type="hidden" id="u_off_no">
+      <label>Officer Name</label>    
+      <input type="text" class="form-control" id='u_off_name'
+      [(ngModel)]="officer.name" name="name" [ngModelOptions]="{standalone: true}"
+       required="required" autofocus>
+     
+  </div>
+
+  <div class="form-group row">
+      <label>Designation</label>
+      <input type="text" class="form-control" id='u_off_des'
+      [(ngModel)]="officer.designation" name="designation" [ngModelOptions]="{standalone: true}" required>
+  </div>
+
+  <div class="form-group row">
+      <label>Department</label>
+      <input type="text" class="form-control" id='u_off_dep'
+      [(ngModel)]="officer.department" name="department" [ngModelOptions]="{standalone: true}" required>
+  </div>
+
+  <div class="form-group row">
+      <label>Contact Number</label>
+      <input type="text" class="form-control" id='u_off_contact' 
+      [(ngModel)]="officer.contactNumber" name="contactNumber" [ngModelOptions]="{standalone: true}" required>
+  </div>
+
+  <div class="form-group row">
+      <label>Email Id</label>
+      <input type="email" class="form-control" id='u_off_email' 
+      [(ngModel)]="officer.emailId" name="emailId" [ngModelOptions]="{standalone: true}" required>     
+  </div>
+</form>
+</div>
+
+<!-- <div class="alert alert-success" *ngIf="alertmsg">
+<strong>{{alertmsg}}</strong>
+</div> -->
+<div  style="text-align: center;">
+<button type="button" class="btn btn-primary" (click)="saveOfficer(officer)">Save</button>
+<input type="reset" name="reset" value="Reset" class="btn btn-default" >
+</div>
+
+
+ 

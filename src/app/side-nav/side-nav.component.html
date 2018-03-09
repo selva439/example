@@ -1,0 +1,39 @@
+ <!-- /.navbar-top-links -->
+ <div class="navbar-default sidebar" role="navigation" id="sidebar">
+  <div class="sidebar-nav navbar-collapse">
+      <ul class="nav" id="side-menu">
+         
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/search']" data-toggle="tooltip" title="Search" data-placement="right"><i class="fa fa-search fa-fw fa-1x"></i> <span> Search Voters</span></a>
+          </li>
+          <li 
+           [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/reports']" data-toggle="tooltip" title="Reports" data-placement="right"><i class="fa fa-bar-chart-o fa-fw fa-1x"></i> <span> Reports</span></a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/sendsms']" data-toggle="tooltip" title="Send SMS" data-placement="right"><i class="fa fa-comments fa-fw fa-1x"></i> <span> Send SMS</span></a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/sendivr']" data-toggle="tooltip" title="Send IVR Call" data-placement="right"><i class="fa fa-phone fa-fw fa-1x"></i> <span> Send IVR Message</span></a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/officers']" data-toggle="tooltip" title="Officers" data-placement="right"><i class="fa fa-user-secret fa-fw fa-1x"></i> <span> Officers</span></a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/media']" data-toggle="tooltip" title="Media" data-placement="right"><i class="fa fa-tv fa-fw fa-1x"></i> <span> Media</span></a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/events']" data-toggle="tooltip" title="Events" data-placement="right"><i class="fa fa-calendar fa-fw fa-1x"></i> <span> Events</span></a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/pollingStation']" data-toggle="tooltip" title="Polling Stations" data-placement="right"><i class="fa fa-book fa-fw fa-1x"></i> <span> Polling Stations</span></a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a [routerLink]="['/main/electionResult']" data-toggle="tooltip" title="Previous Election Results" data-placement="right"><i class="fa fa-file fa-fw fa-1x"></i> <span> Previous Election Results</span></a>
+          </li>
+
+      </ul>
+  </div>
+
+      <!-- /.sidebar-collapse -->
+    </div>
