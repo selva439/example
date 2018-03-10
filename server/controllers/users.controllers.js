@@ -45,22 +45,9 @@ module.exports.login = function (req, res) {
 };
 
 module.exports.uac = function (req, res) {
-    // hardcoding the user data .. but in future have to fetch from session -- Venkatesh
-    // var userData = {
-    //     name: "venkatesh",
-    //     id: 10,
-    //     phone: "9600748403",
-	//     password: "FSDFSDF",
-    //     role: {
-    //         type: "limit",
-    //         id: 1
-    //     }
-    // };
-    // req.session.user = userData;
-    // var current_user = req.session.user;
+
     console.log('json data '+ req.body);
      var current_user = req.body;
-
     console.log(current_user.name);
     console.log(current_user.role.leader);
     //Limit Leader
@@ -89,19 +76,9 @@ module.exports.uac = function (req, res) {
             });
     }
     //Area Leader
-    /*var uacAreaData = {
-        name: "venkatesh",
-        id: 10,
-        phone: "9600748403",
-	    password: "FSDFSDF",
-        role: {
-            type: "areas",
-            name: "Perala"
-        }
-    };
-    req.session.user = userData;
-    var current_user = req.session.user;*/
+
     else if (current_user.role.leader == "area") {
+        console.log(current_user);
         pollingStation
             .find({ pollingStationName: current_user.role.rname })
             .exec(function (err, areaData) {
@@ -112,6 +89,7 @@ module.exports.uac = function (req, res) {
                         .json(err);
                 }
                 else {
+                    console.log(areaData);
                     console.log(JSON.stringify(areaData));
                     var objToSend = {
                         showParliment: 'false',
@@ -121,6 +99,7 @@ module.exports.uac = function (req, res) {
                         showBooth: 'true',
                         Areadata: areaData
                     };
+                    console.log(objToSend);
                     res.send(objToSend);
                 }
             });
@@ -130,7 +109,7 @@ module.exports.uac = function (req, res) {
         name: "venkatesh",
         id: 10,
         phone: "9600748403",
-	    password: "FSDFSDF",
+        password: "FSDFSDF",
         role: {
             type: "booth",
             id: 95
@@ -167,7 +146,7 @@ module.exports.uac = function (req, res) {
         name: "venkatesh",
         id: 10,
         phone: "9600748403",
-	    password: "FSDFSDF",
+        password: "FSDFSDF",
         role: {
             type: "MLA",
             id: 106
@@ -205,7 +184,7 @@ module.exports.uac = function (req, res) {
         name: "venkatesh",
         id: 10,
         phone: "9600748403",
-	    password: "FSDFSDF",
+        password: "FSDFSDF",
         role: {
             type: "MP",
             id: 15
@@ -369,4 +348,3 @@ module.exports.register = function (req, res) {
             
     });
 };
-

@@ -14,6 +14,9 @@ import {PasswordModule} from 'primeng/password';
 import {ButtonModule} from 'primeng/button';
 import {DataTableModule} from 'primeng/primeng';
 import {GrowlModule} from 'primeng/primeng';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {DialogModule} from 'primeng/dialog';
+
 
 import { HeaderComponent } from './header/header.component';
 import { SearchInfoComponent } from './search-info/search-info.component';
@@ -31,6 +34,7 @@ import { SendsmsComponent } from './sendsms/sendsms.component';
 import { SendivrComponent } from './sendivr/sendivr.component';
 import {NewMediaComponent} from './media/new-media/new-media.component';
 import {NewOfficerComponent} from './officers/new-officer/new-officer.component';
+import { NewEventComponent } from './events/new-event/new-event.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,8 @@ import {NewOfficerComponent} from './officers/new-officer/new-officer.component'
     PollingStationComponent,
     ElectionComponent,
     SendsmsComponent,
-    SendivrComponent
+    SendivrComponent,
+    NewEventComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +65,8 @@ import {NewOfficerComponent} from './officers/new-officer/new-officer.component'
     PasswordModule,
     ButtonModule,
     GrowlModule,
+    ConfirmDialogModule,
+    DialogModule,
     FormsModule, 
     HttpModule,
     ReactiveFormsModule,

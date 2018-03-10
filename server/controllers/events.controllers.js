@@ -50,11 +50,11 @@ module.exports.eventsUpdateOne = function(req,res){
                 .json(response.message); 
             } else {
                 doc.eventDate = req.body.eventDate;
-                doc.eventName = req.body.eventName;
+                doc.program = req.body.program;
                 doc.areaName = req.body.areaName;
-                doc.boothNumber = parseInt(req.body.boothNumber, 10);
+                doc.boothNo = parseInt(req.body.boothNo, 10);
                 doc.managerName = req.body.managerName;
-                doc.managerMobile = parseInt(req.body.managerMobile, 10);
+                doc.managerContact = parseInt(req.body.managerContact, 10);
             }
             //save to mongodb with callback function
             doc.save(function(err, eventsUpdated){
@@ -101,11 +101,11 @@ module.exports.eventsAddOne = function(req,res){
    Events
     .create({
         eventDate : req.body.eventDate,
-        eventName : req.body.eventName,
+        program : req.body.program,
         areaName : req.body.areaName,
-        boothNumber : parseInt(req.body.boothNumber, 10),
+        boothNo : parseInt(req.body.boothNo, 10),
         managerName : req.body.managerName,
-        managerMobile : parseInt(req.body.managerMobile, 10)
+        managerContact : parseInt(req.body.managerContact, 10)
     }, function(err, events){
        if(err){
            console.log("Error creating events" );

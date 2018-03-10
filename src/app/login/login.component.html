@@ -22,27 +22,26 @@
                               <div class="ui-md-5">
                                   <div class="ui-inputgroup">
                                       <!-- <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span> -->
-                                      <input type="text" [(ngModel)]="user.UserName" name="UserName" [ngModelOptions]="{standalone: true}"
-                                       pInputText placeholder="Username">         
+                                      <!-- <input type="text" [(ngModel)]="user.UserName" name="UserName" [ngModelOptions]="{standalone: true}"
+                                       pInputText placeholder="Username">          -->
                                   </div>
-                                  <!-- <input class="form-control" placeholder="Mobile Number" name="mobile" id="mobile" type="tel" maxlength="10" autofocus> -->
+                                  <input class="form-control" [(ngModel)]="user.UserName" name="UserName" [ngModelOptions]="{standalone: true}"
+                                    placeholder="Mobile Number" name="mobile" id="mobile" type="tel" maxlength="10" autofocus>
                               </div>
                               <div class="ui-md-5">
                                   <div class="ui-inputgroup">
                                       <!-- <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span> -->
-                                      <input type="passowrd" [(ngModel)]="user.Password" name="Password" [ngModelOptions]="{standalone: true}"
-                                      pPassword  placeholder="Password">         
+                                      <!-- <input type="passowrd" [(ngModel)]="user.Password" name="Password" [ngModelOptions]="{standalone: true}"
+                                      pPassword  placeholder="Password">          -->
                                   </div>
-                                  <!-- <input class="form-control" placeholder="Password" id="pwd" name="password" type="password" value=""> -->
+                                  <input class="form-control"[(ngModel)]="user.Password" name="Password" [ngModelOptions]="{standalone: true}"
+                                      placeholder="Password" id="pwd" name="password" type="password" value="">
                               </div>
                               <div class="ui-md-2">
                                   <button pButton type="button" (click)="loginUser(user)" label="Go"  class="ui-button-warning"></button>
                                    <!-- <input type="button" class="btn btn-block btn-warning " name="Go" id="go" value="Go" onClick="loginuser();"> onClick="loginuser();"> -->
                                   </div> 
-                          </div>
-                          
-                          <!-- Change this to a button or input when using this as a form -->
-                          
+                          </div>                                                  
                       </fieldset>
                   </form>
               </div>

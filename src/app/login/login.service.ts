@@ -8,12 +8,9 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class LoginService {
-    private baseApiUrl = GlobalVariable.BASE_API_URL;
-   
-    constructor(private http: Http) {
-       
+    private baseApiUrl = GlobalVariable.BASE_API_URL;   
+    constructor(private http: Http) {       
     }
-
     
 getLogin(data : User):Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/json' });
@@ -45,20 +42,13 @@ console.log('body'+body);
     }).catch(handleError);
 }
 
-// getRoleAccess(data:any):Observable<any> {
-//     let headers = new Headers({ 'Content-Type': 'application/json' });
-//     return this.http.get(`${this.baseApiUrl}/voterpulse/users/uac`, { headers: headers })
-//         .map(res=>{
-//             console.log('getRoleAccess data'+ JSON.stringify(res.json()));
-//         }).catch(handleError);
-// }
-
 }
 
 
 function storeLocal(response: Response) {        
     localStorage.setItem('rleader', response.json().data.role.leader)
     localStorage.setItem('rid', response.json().data.role.id)
+    localStorage.setItem('rname', response.json().data.role.rname)
     localStorage.setItem('id', response.json().data.id)
     localStorage.setItem('name', response.json().data.name)
     localStorage.setItem('phone',response.json().data.phone ) 

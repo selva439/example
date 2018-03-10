@@ -16,12 +16,10 @@ electionData :Election[];
    }
 
   ngOnInit() {
-    console.log('oninit');
-    this.standby();
+  this.standby();
     this.electionService.getelectionData().subscribe(data => {
       this.electionData= data;    
-      this.ready();
-      console.log(this.electionData); 
+      this.ready();      
      });
   }
 

@@ -56,8 +56,8 @@ module.exports.officersUpdateOne = function(req,res){
                 doc.name = req.body.name;
                 doc.designation = req.body.designation;
                 doc.department = req.body.department;
-                doc.contactNumber = parseInt(req.body.mobile, 10);
-                doc.emailId = req.body.email;
+                doc.contactNumber = parseInt(req.body.contactNumber, 10);
+                doc.emailId = req.body.emailId;
             }
             //save to mongodb with callback function
             doc.save(function(err, officersUpdated){
@@ -106,8 +106,8 @@ module.exports.officersAddOne = function(req,res){
         name: req.body.name,
         designation: req.body.designation,
         department: req.body.department,
-        contactNumber: parseInt(req.body.mobile, 10), 
-        emailId: req.body.email
+        contactNumber: parseInt(req.body.contactNumber, 10), 
+        emailId: req.body.emailId
     }, function(err, officers){
        if(err){
            console.log("Error creating officer" );

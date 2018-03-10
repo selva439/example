@@ -19,7 +19,7 @@ module.exports.voterpulseGetAll = function(req, res){
 
     //Get pollingStationId
     if (req.query && req.query.psid)
-        query.pollingStationId = req.query.psid;
+        query.pollingStationId = parseInt(req.query.psid, 10);
     
     if(req.query && req.query.vname)
     {
@@ -74,65 +74,29 @@ module.exports.voterpulseGetAll = function(req, res){
 
 
 module.exports.voterpulseGetReports = function(req, res){
-    //console.log("Finding Voters", +JSON.stringify(req.body));
-    //Get assemblyConstituencyId
-    //if(current_user.role.type == "MLA")
-    //{ }
-    //Get pollingStationLimits
-        if(req.query && req.query.limits)
-        {
-            limits = req.query.limits;
-        }
-        else { 
-            limits = ""; 
-        }
-        //Get pollingStationName
-        if(req.query && req.query.psarea)
-        {
-            psArea = req.query.psarea;
-        }else {
-            psArea = "";
-        }
-        //Get pollingStationId
-        if(req.query && req.query.psid)
-        {
-            psID = parseInt(req.query.psid, 10);
-        }
-        else
-        {
-            psID = null;
-        }
-        if(req.query && req.query.category)
-        {
-            category = req.query.category;
-        }
-
-        var query = {
-            //assemblyConstituencyId : current_user.role.id,
-            pollingStationLimits : limits, 
-            pollingStationName : psArea,
-            pollingStationId : psID
-        };
-        var projection = {favorTo : 1, caste : 1, occupation : 1, sex : 1, age : 1, outOfStation : 1 }
-    
-    //else if (curent_user.role == "MP")    
-    //{}
-    if(req.query && req.query.cid){
-        var acID = parseInt(req.query.cid);
-    }
+    var query = {};
+    //Get assembly Id 
+    if(req.query && req.query.cid)
+        query.assemblyConstituencyId = req.query.cid;
     //Get pollingStationLimits
     if(req.query && req.query.limits)
+        query.pollingStationLimits = req.query.limits;
+
+    //Get pollingStationName
+    if(req.query && req.query.psarea)
+        query.pollingStationName = req.query.psarea ;
+
+    //Get pollingStationId
+    if (req.query && req.query.psid)
+        query.pollingStationId = parseInt(req.query.psid, 10);
+    
+    if(req.query && req.query.category)
     {
-        limits = req.query.limits;
+        category = req.query.category;
     }
-    else if(!req.query.limits){
-        limits = "";
-    }
-    var query = {
-        assemblyConstituencyId : acID, 
-        pollingStationLimits : limits, 
-    };
-    var projection = {favorTo : 1, caste : 1, occupation : 1, sex : 1, age : 1, outOfStation : 1 }
+
+        var projection = {favorTo : 1, caste : 1, occupation : 1, sex : 1, age : 1, outOfStation : 1 }
+    
     Voters
         .find(query, projection)
         .exec(function(err, voters){
@@ -149,11 +113,6 @@ module.exports.voterpulseGetReports = function(req, res){
             } 
         });
 };
-
-
-
-
-
 module.exports.voterpulseGet = function(req, res){
     
     Voters
@@ -209,27 +168,21 @@ module.exports.voterpulseGetOne = function(req, res) {
     //console.log("Finding Voters", +JSON.stringify(req.body));
     //Get assemblyConstituencyId
     
-    //if(current_user.role.type == "MP")   
-    //}
-        
-    if(req.query && req.query.cid){
-        var acID = parseInt(req.query.cid);
-    }
+    var query = {};
+    //Get assembly Id 
+    if(req.query && req.query.cid)
+        query.assemblyConstituencyId = req.query.cid;
     //Get pollingStationLimits
     if(req.query && req.query.limits)
-    {
-        limits = req.query.limits;
-    }
+        query.pollingStationLimits = req.query.limits;
+
     //Get pollingStationName
     if(req.query && req.query.psarea)
-    {
-        psArea = req.query.psarea;
-    }
+        query.pollingStationName = req.query.psarea ;
+
     //Get pollingStationId
-    if(req.query && req.query.psid)
-    {
-        psID = parseInt(req.query.psid, 10);
-    }
+    if (req.query && req.query.psid)
+        query.pollingStationId = parseInt(req.query.psid, 10);
     
     var projection = { mobileNumber : 1 };
    
@@ -238,242 +191,65 @@ module.exports.voterpulseGetOne = function(req, res) {
             var category = req.query.category;
             //All 
             if(category == "0"){
-            
-                Voters
-                    .find(query, projection)
-                    .exec(function(err, users){
-                    if(err){
-                        console.log("Error finding Users");
-                    res 
-                        .status(500)
-                        .json(err)
-                    }
-                    else {
-                        console.log("Found Users", users.length);
-                    res
-                        .json(users);
-                    } 
-                });
+    
             }
             //Caste
             else if(category == "c"){
                 var value = req.query.type;
-                var query = {
-                    assemblyConstituencyId : acID, 
-                    pollingStationLimits : limits, 
-                    pollingStationName : psArea,
-                    pollingStationId : psID,
-                    caste : value
-                };
-                Voters
-                    .find(query, projection)
-                    .exec(function(err, users){
-                    if(err){
-                        console.log("Error finding Users");
-                    res 
-                        .status(500)
-                        .json(err)
-                    }
-                    else {
-                        console.log("Found Users", users.length);
-                    res
-                        .json(users);
-                    }
-                })
-
+                query.caste = value;
             }
             //Party
             else if(category == "p"){
                 var value = req.query.type;
-                var query = {
-                    assemblyConstituencyId : acID, 
-                    pollingStationLimits : limits, 
-                    pollingStationName : psArea,
-                    pollingStationId : psID,
-                    favorTo : value
-                };
-                Voters
-                    .find(query, projection)
-                    .exec(function(err, users){
-                    if(err){
-                        console.log("Error finding Users");
-                    res 
-                        .status(500)
-                        .json(err)
-                    }
-                    else {
-                        console.log("Found Users", users.length);
-                    res
-                        .json(users);
-                    } 
-            })
-
+                query.favorTo = value;
             }
             //Occupation
             else if(category == "o"){
                 var value = req.query.type;
-                var query = {
-                    assemblyConstituencyId : acID, 
-                    pollingStationLimits : limits, 
-                    pollingStationName : psArea,
-                    pollingStationId : psID,
-                    occupation : value
-                };
-                Voters
-                    .find(query, projection)
-                    .exec(function(err, users){
-                    if(err){
-                        console.log("Error finding Users");
-                    res 
-                        .status(500)
-                        .json(err)
-                    }
-                    else {
-                        console.log("Found Users", users.length);
-                    res
-                        .json(users);
-                    } 
-            })
-
+                query.occupation = value;
             }
             //Gender
             else if(category == "g"){
                 var value = req.query.type;
-                var query = {
-                    assemblyConstituencyId : acID, 
-                    pollingStationLimits : limits, 
-                    pollingStationName : psArea,
-                    pollingStationId : psID,
-                    sex : value
-                };
-                Voters
-                    .find(query, projection)
-                    .exec(function(err, users){
-                    if(err){
-                        console.log("Error finding Users");
-                    res 
-                        .status(500)
-                        .json(err)
-                    }
-                    else {
-                        console.log("Found Users", users.length);
-                    res
-                        .json(users);
-                    } 
-            })
-
+                query.sex = value;  
             }
             //Leader
             else if(category == "l"){
                 var value = req.query.type;
-                var query = {
-                    assemblyConstituencyId : acID, 
-                    pollingStationLimits : limits, 
-                    pollingStationName : psArea,
-                    pollingStationId : psID,
-                    leader : value
-                };
-                Voters
-                    .find(query, projection)
-                    .exec(function(err, users){
-                    if(err){
-                        console.log("Error finding Users");
-                    res 
-                        .status(500)
-                        .json(err)
-                    }
-                    else {
-                        console.log("Found Users", users.length);
-                    res
-                        .json(users);
-                    } 
-            })
-
+                query.leader = value;
             }
             //Booth Agent
             else if(category == "b"){
                 var value = req.query.type;
-                var query = {
-                    assemblyConstituencyId : acID, 
-                    pollingStationLimits : limits, 
-                    pollingStationName : psArea,
-                    pollingStationId : psID,
-                    boothAgent : value
-                };
-                Voters
-                    .find(query, projection)
-                    .exec(function(err, users){
-                    if(err){
-                        console.log("Error finding Users");
-                    res 
-                        .status(500)
-                        .json(err)
-                    }
-                    else {
-                        console.log("Found Users", users.length);
-                    res
-                        .json(users);
-                    } 
-            })
-
+                query.boothAgent = value;
             }
             //VIPs
             else if(category == "v"){
                 var value = req.query.type;
-                var query = {
-                    assemblyConstituencyId : acID, 
-                    pollingStationLimits : limits, 
-                    pollingStationName : psArea,
-                    pollingStationId : psID,
-                    leader : value
-                };
-                Voters
-                    .find(query, projection)
-                    .exec(function(err, users){
-                    if(err){
-                        console.log("Error finding Users");
-                    res 
-                        .status(500)
-                        .json(err)
-                    }
-                    else {
-                        console.log("Found Users", users.length);
-                    res
-                        .json(users);
-                    } 
-            })
-
+                query.leader = value;
             }
             //Out of Station
             else if(category == "os"){
                 var value = req.query.type;
-                var query = {
-                    assemblyConstituencyId : acID, 
-                    pollingStationLimits : limits, 
-                    pollingStationName : psArea,
-                    pollingStationId : psID,
-                    outOfStation : value
-                };
-                Voters
+                query.outOfStation = value;
+            }
+            
+            Voters
                     .find(query, projection)
-                    .exec(function(err, users){
+                    .exec(function(err, voters){
                     if(err){
-                        console.log("Error finding Users");
+                        console.log("Error finding voters");
                     res 
                         .status(500)
                         .json(err)
                     }
                     else {
-                        console.log("Found Users", users.length);
+                        console.log("Found voters", voters.length);
                     res
-                        .json(users);
+                        .json(voters);
                     } 
             })
 
-            }
+            
             }
         }
-   
-
-    
-    

@@ -2,3 +2,8 @@
 {
     width:auto !important;
 }
+.disablecls{    
+    color: gray;
+    cursor: not-allowed;
+    text-decoration: underline;
+}

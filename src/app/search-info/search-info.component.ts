@@ -9,11 +9,12 @@ import { UserRestriction, AssemblyData, LimitData, PollingStationData, Search, V
   providers:[SearchService]
 })
 export class SearchInfoComponent implements OnInit {
-  assemblyDataValue:string= "";limitDataValue:string=""; pollingStationArea:string=""; boothDataValue:string ="";
-  voterName:string = "";type:any=0;
+  assemblyDataValue:string= "0";limitDataValue:string=""; 
+  pollingStationArea:string=""; boothDataValue:string ="";
+  voterName:string = "";type:number=1;
   assemblyDataList: AssemblyData[];
   limitDataList :LimitData[];
-  pollingStationDataList:PollingStationData[];
+  pollingStationDataList:any[];
   boothDataList: any[];
   votersData:Voter[];
   search :Search = new Search;
@@ -29,6 +30,7 @@ export class SearchInfoComponent implements OnInit {
 	    password: localStorage.getItem('password'),
         role: {
           leader: localStorage.getItem('rleader'),
+          rname: localStorage.getItem('rname'),
           id: localStorage.getItem('rid')
         }
     };       
@@ -43,8 +45,11 @@ export class SearchInfoComponent implements OnInit {
       {
         this.limitDataList = data.AssemblyData; 
       }else if(rleader == "limits")
-      {
+      {        
         this.pollingStationDataList  = data.Areadata; 
+      }else if(rleader =="area")
+      {
+        this.boothDataList = data.Areadata;
       }
            
      });
@@ -56,15 +61,29 @@ export class SearchInfoComponent implements OnInit {
     this.searchService.getLimitData(this.assemblyDataValue).subscribe(data => {  
       console.log('limit'+JSON.stringify(data));   
       this.limitDataList = data;     
+      this.pollingStationDataList = [];
+      this.boothDataList = [];   
+
+      this.limitDataValue="";
+      this.pollingStationArea="";
+      this.boothDataValue="";
      });   
   }
 
   changeLimit()
-  {
+  {    
+    let reqString:string;
     console.log('xfv'+    this.limitDataValue);   
-    this.searchService.getPollingStationData(this.limitDataValue).subscribe(data => {  
-      console.log('polling Station'+JSON.stringify(data));   
+    if(this.limitDataValue == "Rural Mandal")
+    reqString = "RuralMandal";
+    else
+    reqString = this.limitDataValue;
+    this.searchService.getPollingStationData(reqString).subscribe(data => {  
+      console.log('polling Station'+JSON.stringify(data));         
       this.pollingStationDataList = data;     
+      this.boothDataList = [];
+      this.pollingStationArea="";
+      this.boothDataValue="";
      });
      
   }
@@ -73,7 +92,8 @@ export class SearchInfoComponent implements OnInit {
       console.log('xfv'+    this.pollingStationArea);  
       this.searchService.getBoothData(this.pollingStationArea).subscribe(data => {  
         console.log('booth data'+JSON.stringify(data));   
-        this.boothDataList = data;     
+        this.boothDataList = data;             
+      this.boothDataValue="";
        }); 
     }
     
@@ -81,8 +101,15 @@ searchData()
 {
   
   console.log(this.assemblyDataValue);
+  let reqString:string;
+    console.log('xfv'+    this.limitDataValue);   
+    if(this.limitDataValue == "Rural Mandal")
+    reqString = "Rural+Mandal";
+    else
+    reqString = this.limitDataValue;
+
   this.search.cid = this.assemblyDataValue;
-this.search.limits= this.limitDataValue;
+this.search.limits= reqString;
 this.search.psarea = this.pollingStationArea;
 this.search.psid = this.boothDataValue;
 this.search.vname = this.voterName;
@@ -100,7 +127,7 @@ this.searchService.searchData(this.search).subscribe(data => {
       this.pollingStationArea="";
       this.boothDataValue="";
       this.voterName="";
-      this.type=0;
+      this.type=1;
       this.votersData= [];
     }
 }

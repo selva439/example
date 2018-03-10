@@ -1,0 +1,53 @@
+<div class="modal-body">
+  <form  [formGroup]="eventForm">      
+    <div class="form-group row">
+      <label>Event Date</label>
+      <input type="text" class="form-control" id='m_cat'  
+        [(ngModel)]="event.eventDate" name="eventDate" [ngModelOptions]="{standalone: true}"        
+        required="required" autofocus>       
+    </div>
+    <div class="form-group row">
+      <label>Program</label>
+        <input type="text" class="form-control" id='program' 
+        [(ngModel)]="event.program" name="program" [ngModelOptions]="{standalone: true}"  
+        required>
+    </div>
+
+    <div class="form-group row">
+      <label>Area Name</label>
+        <input type="text"  class="form-control" id='areaname' 
+        [(ngModel)]="event.areaName" name="areaName" [ngModelOptions]="{standalone: true}"  
+        required>
+    </div>   
+    <div class="form-group row">
+      <label>Booth No</label>
+      <input type="text"  class="form-control" id='boothno' 
+        [(ngModel)]="event.boothNo" name="boothNo" [ngModelOptions]="{standalone: true}"  
+        required>
+    </div>
+
+    <div class="form-group row">
+      <label>Manager Name</label>
+        <input type="text" class="form-control" id='managername'
+        [(ngModel)]="event.managerName" name="managerName" [ngModelOptions]="{standalone: true}"  
+        required>
+    </div>
+
+
+    <div class="form-group row">
+      <label>Manager contact</label>
+        <input type="text" class="form-control" id='managercontact'
+        [(ngModel)]="event.managerContact" name="managerContact" [ngModelOptions]="{standalone: true}"  
+        required>
+    </div>
+      
+</form>
+</div>
+
+<div  style="text-align: center;">
+<button type="button" class="btn btn-primary" (click)="saveEvent(event)">Save</button>
+<input type="reset" name="reset" value="Reset" (click)="reset()" class="btn btn-default" >
+</div>
+
+
+ 

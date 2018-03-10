@@ -14,21 +14,14 @@
 <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
 <input #gt type="text" pInputTextsize="50" style="width:15% !important" placeholder="Global Filter">
 
-
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal"
- data-target="#newOfficerModal"
- style="float:right;margin-right: 10px;"><i class="fa fa-plus">              
-</i></button>
-
-<!-- 
-<button type="button" class="btnstyle" (click)="createNew()" pButton 
-            style="float:right;margin-right: 10px;"><i class="fa fa-plus" aria-hidden="true">              
-            </i></button>  -->
+<div style="float:right;margin-right:10px;">
+    <button type="text" (click)="createNewOfficer()" pButton icon="fa-plus"
+    [style]="{'float':'right','margin-right':'10px'}">
+    </button> 
+</div>
 
 </div>
-      <div class="row">
-
-     
+      <div class="row">     
 <p-dataTable [value]="officersData" [rows]="10" [paginator]="true" [rowsPerPageOptions]="[10,20,30]"
             [responsive]="true" [globalFilter]="gt" #officersDataTable>
            
@@ -36,18 +29,15 @@
             <p-column field="designation" header="Designation" [style]="{'overflow':'visible'}" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>      
             <p-column field="department" header="Department" [style]="{'overflow':'visible'}" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
             <p-column field="contactNumber" header="Contact Number" [style]="{'overflow':'visible'}" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
-            <p-column field="emailId" header="Email Id" [style]="{'overflow':'visible'}" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>
-           
-            <p-column  [style]="{'overflow':'visible','width':'80px'}">
+            <p-column field="emailId" header="Email Id" [style]="{'overflow':'visible'}" [sortable]="true" [filter]="true" filterPlaceholder="Search"></p-column>           
+            <p-column header="Actions" [style]="{'overflow':'visible','width':'100px'}">
               <ng-template let-col let-currentRowData="rowData" pTemplate="body">
                 <div  style="text-align: center; ">
-                  <a style="color: blue;text-decoration: underline; cursor:pointer;"
-                   (click)="OnEditOfficer(currentRowData)"><i class="far fa-pencil"></i>  </a>
-                </div>      
-                <div  style="text-align: center;">
-                  <a style="color: blue;text-decoration: underline; cursor:pointer;"
-                   (click)="OnDeleteOfficer(currentRowData)">Edit 
-                  </a>
+                    <button type="text" (click)="OnEditOfficer(currentRowData)" pButton 
+                    icon="fa-pencil"></button>                  
+                &nbsp;&nbsp;
+                    <button type="text" (click)="confirmDeleteOfficer(currentRowData)" pButton 
+                    icon="fa-trash"></button>
                 </div>        
               </ng-template>
             </p-column>        
@@ -56,49 +46,19 @@
           </div>
         </div>
       </div>
+      <p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425" #cd>
+          <p-footer>
+              <button type="button" pButton icon="fa-close" label="Cancel" (click)="cd.reject()"></button>
+              <button type="button" pButton icon="fa-check" label="Ok" (click)="cd.accept()"></button>
+          </p-footer>
+      </p-confirmDialog>
 
+      <p-dialog [(visible)]="isShowNewOfficerModal" [width]="400" modal="true">
+        <p-header>
+            {{modalTitle}}
+        </p-header>
+        <app-new-officer [officer]="currentOfficer" [tableData]="officersData"
+        (outputEvent)="refresh($event)"></app-new-officer>      
+    </p-dialog>
   
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-      <!-- Modal -->
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-      
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-      
-        </div>
-      </div>
-      
-
-
-        <div class="modal-dialog">
-      <!--Create new Officer (onHidden)="onHidden()" modal-lg -->
-<div id="newOfficerModal" class="modal fade" 
- role="dialog" >
-  <div class="modal-dialog ">
-    <div class="modal-content">
-      <div class="modal-header"> 
-        <h4 class="modal-title pull-left">Create New Officer</h4>
-        <button type="button" class="close pull-right" (click)="newOfficerModal.hide()" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-     <app-new-officer [officer]="currentOfficer" [tableData]="officersData"
-      (outputEvent)="refresh($event)"></app-new-officer>
-      </div>
-    </div>
-  </div>
-</div>
+    <p-growl  [value]="msgs" [style]="{'overflow':'visible'}"></p-growl>

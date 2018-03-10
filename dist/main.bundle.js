@@ -120,28 +120,36 @@ var GlobalVariable = Object.freeze({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_primeng_button___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_primeng_button__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_primeng_primeng__ = __webpack_require__("../../../../primeng/primeng.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_primeng_primeng___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_primeng_primeng__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__search_info_search_info_component__ = __webpack_require__("../../../../../src/app/search-info/search-info.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__reports_reports_component__ = __webpack_require__("../../../../../src/app/reports/reports.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__side_nav_side_nav_component__ = __webpack_require__("../../../../../src/app/side-nav/side-nav.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__officers_officers_component__ = __webpack_require__("../../../../../src/app/officers/officers.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__media_media_component__ = __webpack_require__("../../../../../src/app/media/media.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__events_events_component__ = __webpack_require__("../../../../../src/app/events/events.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__main_main_component__ = __webpack_require__("../../../../../src/app/main/main.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__polling_station_polling_station_component__ = __webpack_require__("../../../../../src/app/polling-station/polling-station.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__election_election_component__ = __webpack_require__("../../../../../src/app/election/election.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__sendsms_sendsms_component__ = __webpack_require__("../../../../../src/app/sendsms/sendsms.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__sendivr_sendivr_component__ = __webpack_require__("../../../../../src/app/sendivr/sendivr.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media_new_media_new_media_component__ = __webpack_require__("../../../../../src/app/media/new-media/new-media.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__officers_new_officer_new_officer_component__ = __webpack_require__("../../../../../src/app/officers/new-officer/new-officer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_primeng_confirmdialog__ = __webpack_require__("../../../../primeng/confirmdialog.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_primeng_confirmdialog___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_primeng_confirmdialog__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_primeng_dialog__ = __webpack_require__("../../../../primeng/dialog.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_primeng_dialog___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_primeng_dialog__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__search_info_search_info_component__ = __webpack_require__("../../../../../src/app/search-info/search-info.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__reports_reports_component__ = __webpack_require__("../../../../../src/app/reports/reports.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__side_nav_side_nav_component__ = __webpack_require__("../../../../../src/app/side-nav/side-nav.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__officers_officers_component__ = __webpack_require__("../../../../../src/app/officers/officers.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__media_media_component__ = __webpack_require__("../../../../../src/app/media/media.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__events_events_component__ = __webpack_require__("../../../../../src/app/events/events.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__footer_footer_component__ = __webpack_require__("../../../../../src/app/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__main_main_component__ = __webpack_require__("../../../../../src/app/main/main.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__polling_station_polling_station_component__ = __webpack_require__("../../../../../src/app/polling-station/polling-station.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__election_election_component__ = __webpack_require__("../../../../../src/app/election/election.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__sendsms_sendsms_component__ = __webpack_require__("../../../../../src/app/sendsms/sendsms.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__sendivr_sendivr_component__ = __webpack_require__("../../../../../src/app/sendivr/sendivr.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__media_new_media_new_media_component__ = __webpack_require__("../../../../../src/app/media/new-media/new-media.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__officers_new_officer_new_officer_component__ = __webpack_require__("../../../../../src/app/officers/new-officer/new-officer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__events_new_event_new_event_component__ = __webpack_require__("../../../../../src/app/events/new-event/new-event.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -177,23 +185,24 @@ var AppModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_25__media_new_media_new_media_component__["a" /* NewMediaComponent */],
-                __WEBPACK_IMPORTED_MODULE_26__officers_new_officer_new_officer_component__["a" /* NewOfficerComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__header_header_component__["a" /* HeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__search_info_search_info_component__["a" /* SearchInfoComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__reports_reports_component__["a" /* ReportsComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__side_nav_side_nav_component__["a" /* SideNavComponent */],
-                __WEBPACK_IMPORTED_MODULE_15__officers_officers_component__["a" /* OfficersComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__media_media_component__["a" /* MediaComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__events_events_component__["a" /* EventsComponent */],
+                __WEBPACK_IMPORTED_MODULE_27__media_new_media_new_media_component__["a" /* NewMediaComponent */],
+                __WEBPACK_IMPORTED_MODULE_28__officers_new_officer_new_officer_component__["a" /* NewOfficerComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__header_header_component__["a" /* HeaderComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__search_info_search_info_component__["a" /* SearchInfoComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__reports_reports_component__["a" /* ReportsComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__side_nav_side_nav_component__["a" /* SideNavComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__officers_officers_component__["a" /* OfficersComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__media_media_component__["a" /* MediaComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__events_events_component__["a" /* EventsComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__helpers_loading_indicator_component__["a" /* LoadingPage */],
-                __WEBPACK_IMPORTED_MODULE_18__login_login_component__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_19__footer_footer_component__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_20__main_main_component__["a" /* MainComponent */],
-                __WEBPACK_IMPORTED_MODULE_21__polling_station_polling_station_component__["a" /* PollingStationComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__election_election_component__["a" /* ElectionComponent */],
-                __WEBPACK_IMPORTED_MODULE_23__sendsms_sendsms_component__["a" /* SendsmsComponent */],
-                __WEBPACK_IMPORTED_MODULE_24__sendivr_sendivr_component__["a" /* SendivrComponent */]
+                __WEBPACK_IMPORTED_MODULE_20__login_login_component__["a" /* LoginComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__footer_footer_component__["a" /* FooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__main_main_component__["a" /* MainComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__polling_station_polling_station_component__["a" /* PollingStationComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__election_election_component__["a" /* ElectionComponent */],
+                __WEBPACK_IMPORTED_MODULE_25__sendsms_sendsms_component__["a" /* SendsmsComponent */],
+                __WEBPACK_IMPORTED_MODULE_26__sendivr_sendivr_component__["a" /* SendivrComponent */],
+                __WEBPACK_IMPORTED_MODULE_29__events_new_event_new_event_component__["a" /* NewEventComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
@@ -202,6 +211,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_8_primeng_password__["PasswordModule"],
                 __WEBPACK_IMPORTED_MODULE_9_primeng_button__["ButtonModule"],
                 __WEBPACK_IMPORTED_MODULE_10_primeng_primeng__["GrowlModule"],
+                __WEBPACK_IMPORTED_MODULE_11_primeng_confirmdialog__["ConfirmDialogModule"],
+                __WEBPACK_IMPORTED_MODULE_12_primeng_dialog__["DialogModule"],
                 __WEBPACK_IMPORTED_MODULE_4__angular_forms__["FormsModule"],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["c" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_forms__["ReactiveFormsModule"],
@@ -311,7 +322,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/election/election.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n  <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n    <loading-indicator></loading-indicator>\n  </div>\n  <div *ngSwitchCase=\"false\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n              <h3 class=\"page-header\" style=\"color: #FFFFFF\">Chirala Election Result 2014</h3>    \n          </div>\n          <!-- /.col-lg-12 -->\n      </div>\n\n      <div class=\"ui-widget-header\" style=\"padding:4px 10px; border-bottom:0 none;\">\n<i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n<input #gt type=\"text\" pInputTextsize=\"50\" style=\"width:15% !important\" placeholder=\"Global Filter\">\n      </div>\n      <div class=\"row\">\n\n     \n<p-dataTable [value]=\"electionData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #ElectionDataTable>           \n            <p-column field=\"boothNo\" header=\"Booth No\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"areaName\" header=\"Area Name\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"pollingStationDetails\" header=\"Polling Station Details\" \n             [style]=\"{'overflow':'visible'}\"\n            [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"polledVotes\" header=\"Polled Votes\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"TDP\" header=\"TDP\"  [style]=\"{'width':'80px'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"NAVODAYAM\" header=\"NAVODAYAM\"  [style]=\"{'width':'100px'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"YSRCP\" header=\"YSRCP\" [sortable]=\"true\" [style]=\"{'width':'80px'}\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"INDEPENDENT\" header=\"INDEPENDENT\" [style]=\"{'width':'100px'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <!-- <p-column field=\"INDEPENDENT\" header=\"Favor To\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n             -->             \n            </p-dataTable> \n\n          </div>\n        </div>\n      </div>\n      <!-- <p-column  [style]=\"{'overflow':'visible','width':'80px'}\">\n          <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n            <div  style=\"text-align: center; \">\n                <button type=\"reset\" class=\"btn btn-default col-sm-3 col-xs-12 pull-right\">\n                    <a style=\"color: blue;text-decoration: underline; cursor:pointer;\"\n                    (click)=\"OnEditOfficer(currentRowData)\"></a>\n                </button>\n              \n             \n            </div>                          \n          </ng-template>\n        </p-column>       -->"
+module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n  <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n    <loading-indicator></loading-indicator>\n  </div>\n  <div *ngSwitchCase=\"false\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n              <h3 class=\"page-header\" style=\"color: #FFFFFF\">Chirala Election Result 2014</h3>    \n          </div>         \n      </div>\n      <div class=\"row ui-widget-header\" style=\"padding:4px 10px; border-bottom:0 none;\">\n<i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n<input #gt type=\"text\" pInputTextsize=\"50\" style=\"width:15% !important\" placeholder=\"Global Filter\">\n      </div>\n      <div class=\"row\">     \n<p-dataTable [value]=\"electionData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #ElectionDataTable>           \n            <p-column field=\"boothNo\" header=\"Booth No\"  [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"areaName\" header=\"Area Name\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"pollingStationDetails\" header=\"Polling Station Details\" [style]=\"{'width':'300px'}\"\n             [style]=\"{'overflow':'visible'}\"\n            [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"polledVotes\" header=\"Polled Votes\"  [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"TDP\" header=\"TDP\"   [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"NAVODAYAM\" header=\"NAVODAYAM\"   [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"YSRCP\" header=\"YSRCP\" [sortable]=\"true\"  [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"INDEPENDENT\" header=\"INDEPENDENT\"  [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"boothFavorTo\" header=\"Favor To\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>                         \n            </p-dataTable> \n          </div>\n        </div>\n      </div>     "
 
 /***/ }),
 
@@ -354,12 +365,10 @@ var ElectionComponent = /** @class */ (function (_super) {
     }
     ElectionComponent.prototype.ngOnInit = function () {
         var _this = this;
-        console.log('oninit');
         this.standby();
         this.electionService.getelectionData().subscribe(function (data) {
             _this.electionData = data;
             _this.ready();
-            console.log(_this.electionData);
         });
     };
     ElectionComponent = __decorate([
@@ -454,7 +463,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/events/events.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n  <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n    <loading-indicator></loading-indicator>\n  </div>\n  <div *ngSwitchCase=\"false\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n              <h3 class=\"page-header\" style=\"color: #FFFFFF\">Events</h3>    \n          </div>\n          <!-- /.col-lg-12 -->\n      </div>\n\n      <div class=\"row ui-widget-header\" style=\"padding:4px 10px; border-bottom:0 none;\">\n<i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n<input #gt type=\"text\" pInputTextsize=\"50\" style=\"width:15% !important\" placeholder=\"Global Filter\">\n      </div>\n      <div class=\"row\">\n\n     \n<p-dataTable [value]=\"eventData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #eventDataTable>\n           \n            <p-column [filter]=\"true\" field=\"eventDate\" header=\"Event Date\" [sortable]=\"true\" filterPlaceholder=\"Search\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <span>{{currentRowData[col.field] | date: 'dd-MMM-yyyy hh:mm'}}</span>\n              </ng-template>\n            </p-column>\n            <!-- <p-column field=\"eventDate\" header=\"Event Date\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column> -->\n            <p-column field=\"program\" header=\"Program\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"areaName\" header=\"Area Name\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"boothNo\" header=\"Booth No\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"managerName\" header=\"Manager Name\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"managerContact\" header=\"Manager Contact\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n           \n            <p-column  [style]=\"{'overflow':'visible','width':'80px'}\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <div  style=\"text-align: center; \">\n                  <a style=\"color: blue;text-decoration: underline; cursor:pointer;\"\n                   (click)=\"OnEditOfficer(currentRowData)\"><i class=\"far fa-pencil\"></i>  </a>\n                </div>      \n                <div  style=\"text-align: center;\">\n                  <a style=\"color: blue;text-decoration: underline; cursor:pointer;\"\n                   (click)=\"OnDeleteOfficer(currentRowData)\">Edit \n                  </a>\n                </div>        \n              </ng-template>\n            </p-column>        \n            </p-dataTable> \n          </div>\n        </div>\n      </div>\n\n"
+module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n  <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n    <loading-indicator></loading-indicator>\n  </div>\n  <div *ngSwitchCase=\"false\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n              <h3 class=\"page-header\" style=\"color: #FFFFFF\">Events</h3>    \n          </div>\n          <!-- /.col-lg-12 -->\n      </div>\n\n      <div class=\"row ui-widget-header\" style=\"padding:4px 10px; border-bottom:0 none;\">\n<i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n<input #gt type=\"text\" pInputTextsize=\"50\" style=\"width:15% !important\" placeholder=\"Global Filter\">\n<div style=\"float:right;margin-right:10px;\">\n    <button type=\"text\" (click)=\"createNewEvent()\" pButton icon=\"fa-plus\"\n[style]=\"{'float':'right','margin-right':'10px'}\">\n</button> \n  </div>\n\n\n      </div>\n      <div class=\"row\">\n\n     \n<p-dataTable [value]=\"eventData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #eventDataTable>\n           \n            <p-column [filter]=\"true\" field=\"eventDate\" header=\"Event Date\" [sortable]=\"true\" filterPlaceholder=\"Search\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <span>{{currentRowData[col.field] | date: 'dd-MMM-yyyy hh:mm'}}</span>\n              </ng-template>\n            </p-column>\n            <!-- <p-column field=\"eventDate\" header=\"Event Date\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column> -->\n            <p-column field=\"program\" header=\"Program\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"areaName\" header=\"Area Name\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"boothNo\" header=\"Booth No\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"managerName\" header=\"Manager Name\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"managerContact\" header=\"Manager Contact\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column header=\"Actions\" [style]=\"{'overflow':'visible','width':'100px'}\">\n                <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                  <div  style=\"text-align: center; \">\n                      <button type=\"text\" (click)=\"OnEditEvent(currentRowData)\" pButton \n                      icon=\"fa-pencil\" ></button>                  \n                  &nbsp;&nbsp;\n                      <button type=\"text\" (click)=\"confirmDeleteEvent(currentRowData)\" pButton \n                      icon=\"fa-trash\"></button>\n                  </div>        \n                </ng-template>\n              </p-column>        \n            </p-dataTable> \n          </div>\n        </div>\n      </div>\n\n      <p-confirmDialog header=\"Confirmation\" icon=\"fa fa-question-circle\" width=\"425\" #cd>\n          <p-footer>\n              <button type=\"button\" pButton icon=\"fa-close\" label=\"Cancel\" (click)=\"cd.reject()\"></button>\n              <button type=\"button\" pButton icon=\"fa-check\" label=\"Ok\" (click)=\"cd.accept()\"></button>\n          </p-footer>\n      </p-confirmDialog>\n\n      <p-dialog [(visible)]=\"isShowNewEventModal\" [width]=\"400\"  modal=\"true\">\n          <p-header>\n              {{modalTitle}}\n          </p-header>\n          <app-new-event [event]=\"currentEvent\" [tableData]=\"eventData\"\n          (outputEvent)=\"refresh($event)\"></app-new-event>      \n      </p-dialog>\n\n      <p-growl  [value]=\"msgs\" [style]=\"{'overflow':'visible'}\"></p-growl>\n"
 
 /***/ }),
 
@@ -466,6 +475,9 @@ module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n  <div *ng
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__events_service__ = __webpack_require__("../../../../../src/app/events/events.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__ = __webpack_require__("../../../../../src/app/helpers/loading-indicator.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_primeng_api__ = __webpack_require__("../../../../primeng/api.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_primeng_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_primeng_api__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__events__ = __webpack_require__("../../../../../src/app/events/events.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -488,14 +500,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var EventsComponent = /** @class */ (function (_super) {
     __extends(EventsComponent, _super);
-    function EventsComponent(eventService) {
+    function EventsComponent(eventService, confirmationService) {
         var _this = _super.call(this) || this;
         _this.eventService = eventService;
+        _this.confirmationService = confirmationService;
+        _this.currentEvent = new __WEBPACK_IMPORTED_MODULE_4__events__["a" /* Events */];
+        _this.modalTitle = "";
+        _this.isShowNewEventModal = false;
+        _this.msgs = [];
         return _this;
     }
     EventsComponent.prototype.ngOnInit = function () {
+        this.loadEventGridData();
+    };
+    EventsComponent.prototype.confirmDeleteEvent = function (data) {
+        var _this = this;
+        this.confirmationService.confirm({
+            message: 'Are you sure to delete this record?',
+            accept: function () {
+                _this.standby();
+                _this.eventService.deleteEvent(data._id).then(function (data) {
+                    console.log('delete res' + JSON.stringify(data));
+                    _this.eventService.getEventsData().subscribe(function (resData) {
+                        _this.eventData = resData;
+                    });
+                    _this.ready();
+                });
+            }
+        });
+    };
+    EventsComponent.prototype.loadEventGridData = function () {
         var _this = this;
         this.standby();
         this.eventService.getEventsData().subscribe(function (data) {
@@ -504,15 +542,31 @@ var EventsComponent = /** @class */ (function (_super) {
             _this.ready();
         });
     };
+    EventsComponent.prototype.createNewEvent = function () {
+        this.modalTitle = "Create New Event";
+        this.currentEvent = new __WEBPACK_IMPORTED_MODULE_4__events__["a" /* Events */]();
+        this.isShowNewEventModal = true;
+    };
+    EventsComponent.prototype.OnEditEvent = function (data) {
+        this.modalTitle = "Edit Event";
+        this.currentEvent = data;
+        this.isShowNewEventModal = true;
+    };
+    EventsComponent.prototype.refresh = function (event) {
+        this.msgs = [];
+        this.msgs.push({ severity: 'success', summary: 'Success Message', detail: 'Event data saved Successfully!' });
+        this.isShowNewEventModal = false;
+        this.loadEventGridData();
+    };
     EventsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-events',
             template: __webpack_require__("../../../../../src/app/events/events.component.html"),
             styles: [__webpack_require__("../../../../../src/app/events/events.component.css")],
-            providers: [__WEBPACK_IMPORTED_MODULE_1__events_service__["a" /* EventService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_1__events_service__["a" /* EventService */], __WEBPACK_IMPORTED_MODULE_3_primeng_api__["ConfirmationService"]],
             entryComponents: [__WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__["a" /* LoadingPage */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__events_service__["a" /* EventService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__events_service__["a" /* EventService */], __WEBPACK_IMPORTED_MODULE_3_primeng_api__["ConfirmationService"]])
     ], EventsComponent);
     return EventsComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__["a" /* LoadingPage */]));
@@ -560,6 +614,45 @@ var EventService = /** @class */ (function () {
             return res.json();
         }).catch(handleError);
     };
+    EventService.prototype.saveEventData = function (data) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var body = JSON.stringify({
+            'eventDate': data.eventDate,
+            'program': data.program,
+            'areaName': data.areaName,
+            'boothNo': data.boothNo,
+            'managerName': data.managerName,
+            'managerContact': data.managerContact
+        });
+        return this.http.post(this.baseApiUrl + "/voterpulse/events/addnew", body, options).toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(handleError);
+    };
+    EventService.prototype.updateEventData = function (data) {
+        console.log('event in srvice' + JSON.stringify(data));
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var body = JSON.stringify({
+            'eventDate': data.eventDate,
+            'program': data.program,
+            'areaName': data.areaName,
+            'boothNo': data.boothNo,
+            'managerName': data.managerName,
+            'managerContact': data.managerContact
+        });
+        console.log(body);
+        return this.http.put(this.baseApiUrl + "/voterpulse/events/" + data._id, body, options).toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(handleError);
+    };
+    EventService.prototype.deleteEvent = function (data) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        return this.http.delete(this.baseApiUrl + "/voterpulse/events/" + data, options).toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(handleError);
+    };
     EventService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
@@ -572,6 +665,139 @@ function handleError(error) {
     // throw an application level error
     return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(error.json() || 'Server error');
 }
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/events/events.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Events; });
+var Events = /** @class */ (function () {
+    function Events() {
+    }
+    return Events;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/events/new-event/new-event.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/events/new-event/new-event.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"modal-body\">\n  <form  [formGroup]=\"eventForm\">      \n    <div class=\"form-group row\">\n      <label>Event Date</label>\n      <input type=\"text\" class=\"form-control\" id='m_cat'  \n        [(ngModel)]=\"event.eventDate\" name=\"eventDate\" [ngModelOptions]=\"{standalone: true}\"        \n        required=\"required\" autofocus>       \n    </div>\n    <div class=\"form-group row\">\n      <label>Program</label>\n        <input type=\"text\" class=\"form-control\" id='program' \n        [(ngModel)]=\"event.program\" name=\"program\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>\n\n    <div class=\"form-group row\">\n      <label>Area Name</label>\n        <input type=\"text\"  class=\"form-control\" id='areaname' \n        [(ngModel)]=\"event.areaName\" name=\"areaName\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>   \n    <div class=\"form-group row\">\n      <label>Booth No</label>\n      <input type=\"text\"  class=\"form-control\" id='boothno' \n        [(ngModel)]=\"event.boothNo\" name=\"boothNo\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>\n\n    <div class=\"form-group row\">\n      <label>Manager Name</label>\n        <input type=\"text\" class=\"form-control\" id='managername'\n        [(ngModel)]=\"event.managerName\" name=\"managerName\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>\n\n\n    <div class=\"form-group row\">\n      <label>Manager contact</label>\n        <input type=\"text\" class=\"form-control\" id='managercontact'\n        [(ngModel)]=\"event.managerContact\" name=\"managerContact\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>\n      \n</form>\n</div>\n\n<div  style=\"text-align: center;\">\n<button type=\"button\" class=\"btn btn-primary\" (click)=\"saveEvent(event)\">Save</button>\n<input type=\"reset\" name=\"reset\" value=\"Reset\" (click)=\"reset()\" class=\"btn btn-default\" >\n</div>\n\n\n "
+
+/***/ }),
+
+/***/ "../../../../../src/app/events/new-event/new-event.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewEventComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__events__ = __webpack_require__("../../../../../src/app/events/events.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__events_service__ = __webpack_require__("../../../../../src/app/events/events.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var NewEventComponent = /** @class */ (function () {
+    function NewEventComponent(eventService) {
+        this.eventService = eventService;
+        this.outputEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+    }
+    NewEventComponent.prototype.ngOnInit = function () {
+        this.eventForm = new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormGroup"]({
+            eventDate: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            program: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            areaName: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            boothNo: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            managerName: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            managerContact: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"]()
+        });
+    };
+    NewEventComponent.prototype.saveEvent = function (req) {
+        var _this = this;
+        console.log('add data' + JSON.stringify(req));
+        console.log(req._id);
+        if (req._id == undefined || req._id == "") {
+            // this.overlayManager.open("window-loading", null);
+            this.eventService.saveEventData(req).then(function (data) {
+                console.log(JSON.stringify(data));
+                _this.outputEvent.emit(_this.tableData);
+                _this.newEventObjectonClose();
+                // this.overlayManager.close("window-loading");
+            });
+        }
+        else {
+            // this.overlayManager.open("window-loading", null);
+            this.eventService.updateEventData(req).then(function (data) {
+                console.log(JSON.stringify(data));
+                _this.newEventObjectonClose();
+                _this.outputEvent.emit(_this.tableData);
+                // this.overlayManager.close("window-loading");  
+            });
+        }
+    };
+    NewEventComponent.prototype.reset = function () {
+        this.event = new __WEBPACK_IMPORTED_MODULE_1__events__["a" /* Events */];
+    };
+    NewEventComponent.prototype.newEventObjectonClose = function () {
+        return this.event = new __WEBPACK_IMPORTED_MODULE_1__events__["a" /* Events */];
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], NewEventComponent.prototype, "tableData", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__events__["a" /* Events */])
+    ], NewEventComponent.prototype, "event", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        __metadata("design:type", Object)
+    ], NewEventComponent.prototype, "outputEvent", void 0);
+    NewEventComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-new-event',
+            template: __webpack_require__("../../../../../src/app/events/new-event/new-event.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/events/new-event/new-event.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__events_service__["a" /* EventService */]])
+    ], NewEventComponent);
+    return NewEventComponent;
+}());
+
 
 
 /***/ }),
@@ -645,7 +871,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#username\r\n{\r\n    text-transform: capitalize;\r\n}", ""]);
 
 // exports
 
@@ -658,7 +884,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-static-top\" role=\"navigation\" style=\"margin-bottom: 0\">\n  <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n          <span class=\"sr-only\">Toggle navigation</span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"search.html\"><img src=\"../assets/images/logo_voter_portal.png\" class=\"img-responsive\" width=\"190px\"></a>\n  </div>\n  <!-- /.navbar-header -->\n  <ul class=\"nav navbar-top-links navbar-right\">\n      <li><a href=\"search.html\" title=\"Home\"><i class=\"fa fa-home fa-faw\"></i></a></li>\n      <li><a href=\"printview.html\" title=\"Print docs\"><i class=\"fa fa-file fa-faw\"></i></a></li>\n      <li><a href=\"reports.html\" title=\"Reports\"><i class=\"fa fa-bar-chart-o fa-faw\"></i></a></li>\n      <li class=\"dropdown\">\n          <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" title=\"User info\">\n              <i class=\"fa fa-user fa-fw\"></i> <i class=\"fa fa-caret-down\"></i>\n          </a>\n          <ul class=\"dropdown-menu dropdown-user\">\n              <li>\n                  <a href=\"#\" id=\"username\"><i class=\"fa fa-user fa-fw\"></i> </a>\n              </li>\n\n              <li class=\"divider\"></li>\n              <li>\n                  <a href=\"logout.html\"><i class=\"fa fa-sign-out fa-fw\"></i> Logout</a>\n              </li>\n          </ul>\n          <!-- /.dropdown-user -->\n      </li>\n      <!-- /.dropdown -->\n  </ul>\n \n  <!-- /.navbar-static-side -->\n  <!-- /.navbar-static-side -->\n</nav>"
+module.exports = "<nav class=\"navbar navbar-default navbar-static-top\" role=\"navigation\" style=\"margin-bottom: 0\">\n  <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n          <span class=\"sr-only\">Toggle navigation</span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n          <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" [routerLink]=\"['/main/search']\"><img src=\"../assets/images/logo_voter_portal.png\" class=\"img-responsive\" width=\"190px\"></a>\n  </div>\n  <!-- /.navbar-header -->\n  <ul class=\"nav navbar-top-links navbar-right\">\n      <li><a [routerLink]=\"['/main/search']\" title=\"Home\"><i class=\"fa fa-search fa-faw\"></i></a></li>\n      <li><a (click)=\"print()\" title=\"Print docs\"><i class=\"fa fa-file fa-faw\"></i></a></li>\n      <li *ngIf='rLeader!=\"limits\" && rLeader!= \"area\" && rLeader!=\"booth\"'>\n          <a [routerLink]=\"['/main/reports']\" title=\"Reports\"><i class=\"fa fa-bar-chart-o fa-faw\"></i></a></li>\n      <li class=\"dropdown\">\n          <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\" title=\"User info\">\n              <i class=\"fa fa-user fa-fw\"></i> <i class=\"fa fa-caret-down\"></i>\n          </a>\n          <ul class=\"dropdown-menu dropdown-user\">\n              <li>\n                  <a href=\"#\" id=\"username\"><i class=\"fa fa-user fa-fw\"></i>\n                {{userName}} </a>\n              </li>\n\n              <li class=\"divider\"></li>\n              <li>\n                  <a (click)=\"logout()\"><i class=\"fa fa-sign-out fa-fw\"></i> Logout</a>\n              </li>\n          </ul>\n          <!-- /.dropdown-user -->\n      </li>\n      <!-- /.dropdown -->\n  </ul>\n \n  <!-- /.navbar-static-side -->\n  <!-- /.navbar-static-side -->\n</nav>"
 
 /***/ }),
 
@@ -668,6 +894,7 @@ module.exports = "<nav class=\"navbar navbar-default navbar-static-top\" role=\"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -678,10 +905,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent() {
+    function HeaderComponent(router) {
+        this.router = router;
     }
     HeaderComponent.prototype.ngOnInit = function () {
+        this.rLeader = localStorage.getItem('rleader');
+        this.userName = localStorage.getItem('name');
+    };
+    HeaderComponent.prototype.print = function () {
+        window.print();
+    };
+    HeaderComponent.prototype.logout = function () {
+        localStorage.removeItem('rleader');
+        localStorage.removeItem('rid');
+        localStorage.removeItem('id');
+        localStorage.removeItem('name');
+        localStorage.removeItem('phone');
+        this.router.navigate(['login']);
     };
     HeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -689,7 +931,7 @@ var HeaderComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/header/header.component.html"),
             styles: [__webpack_require__("../../../../../src/app/header/header.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["Router"]])
     ], HeaderComponent);
     return HeaderComponent;
 }());
@@ -754,7 +996,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n    <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n      <loading-indicator></loading-indicator>\n    </div>\n    <div *ngSwitchCase=\"false\">\n<div class=\"container\">\n  <div class=\"row\">\n      <div class=\"col-md-5 col-md-offset-3\">\n          <div class=\"login-panel panel panel-default\">\n              <div class=\"panel-heading\">\n                  <img src=\"../assets/images/finger.png\" class=\"img-responsive\" style=\"margin-bottom: 10px\" />\n                  <img src=\"../assets/images/logo_voter_portal.png\" class=\"img-responsive\" />\n                  <img src=\"../assets/images/shader.png\" class=\"img-responsive\" />\n\n              </div>\n              <div class=\"panel-body\">\n              <ul id=\"errors\"></ul>\n                  <!-- <form role=\"form\" action=\"/api/voterpulse/users/login\" method = \"post\"> -->\n                    <form [formGroup]=\"loginForm\">\n                      <fieldset>\n                          <div class=\"form-group ui-g ui-fluid\">\n                              <div class=\"ui-md-5\">\n                                  <div class=\"ui-inputgroup\">\n                                      <!-- <span class=\"ui-inputgroup-addon\"><i class=\"fa fa-user\"></i></span> -->\n                                      <input type=\"text\" [(ngModel)]=\"user.UserName\" name=\"UserName\" [ngModelOptions]=\"{standalone: true}\"\n                                       pInputText placeholder=\"Username\">         \n                                  </div>\n                                  <!-- <input class=\"form-control\" placeholder=\"Mobile Number\" name=\"mobile\" id=\"mobile\" type=\"tel\" maxlength=\"10\" autofocus> -->\n                              </div>\n                              <div class=\"ui-md-5\">\n                                  <div class=\"ui-inputgroup\">\n                                      <!-- <span class=\"ui-inputgroup-addon\"><i class=\"fa fa-user\"></i></span> -->\n                                      <input type=\"passowrd\" [(ngModel)]=\"user.Password\" name=\"Password\" [ngModelOptions]=\"{standalone: true}\"\n                                      pPassword  placeholder=\"Password\">         \n                                  </div>\n                                  <!-- <input class=\"form-control\" placeholder=\"Password\" id=\"pwd\" name=\"password\" type=\"password\" value=\"\"> -->\n                              </div>\n                              <div class=\"ui-md-2\">\n                                  <button pButton type=\"button\" (click)=\"loginUser(user)\" label=\"Go\"  class=\"ui-button-warning\"></button>\n                                   <!-- <input type=\"button\" class=\"btn btn-block btn-warning \" name=\"Go\" id=\"go\" value=\"Go\" onClick=\"loginuser();\"> onClick=\"loginuser();\"> -->\n                                  </div> \n                          </div>\n                          \n                          <!-- Change this to a button or input when using this as a form -->\n                          \n                      </fieldset>\n                  </form>\n              </div>\n          </div>\n      </div>\n  </div>\n  \n</div>\n\n</div>\n  \n</div>"
+module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n    <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n      <loading-indicator></loading-indicator>\n    </div>\n    <div *ngSwitchCase=\"false\">\n<div class=\"container\">\n  <div class=\"row\">\n      <div class=\"col-md-5 col-md-offset-3\">\n          <div class=\"login-panel panel panel-default\">\n              <div class=\"panel-heading\">\n                  <img src=\"../assets/images/finger.png\" class=\"img-responsive\" style=\"margin-bottom: 10px\" />\n                  <img src=\"../assets/images/logo_voter_portal.png\" class=\"img-responsive\" />\n                  <img src=\"../assets/images/shader.png\" class=\"img-responsive\" />\n\n              </div>\n              <div class=\"panel-body\">\n              <ul id=\"errors\"></ul>\n                  <!-- <form role=\"form\" action=\"/api/voterpulse/users/login\" method = \"post\"> -->\n                    <form [formGroup]=\"loginForm\">\n                      <fieldset>\n                          <div class=\"form-group ui-g ui-fluid\">\n                              <div class=\"ui-md-5\">\n                                  <div class=\"ui-inputgroup\">\n                                      <!-- <span class=\"ui-inputgroup-addon\"><i class=\"fa fa-user\"></i></span> -->\n                                      <!-- <input type=\"text\" [(ngModel)]=\"user.UserName\" name=\"UserName\" [ngModelOptions]=\"{standalone: true}\"\n                                       pInputText placeholder=\"Username\">          -->\n                                  </div>\n                                  <input class=\"form-control\" [(ngModel)]=\"user.UserName\" name=\"UserName\" [ngModelOptions]=\"{standalone: true}\"\n                                    placeholder=\"Mobile Number\" name=\"mobile\" id=\"mobile\" type=\"tel\" maxlength=\"10\" autofocus>\n                              </div>\n                              <div class=\"ui-md-5\">\n                                  <div class=\"ui-inputgroup\">\n                                      <!-- <span class=\"ui-inputgroup-addon\"><i class=\"fa fa-user\"></i></span> -->\n                                      <!-- <input type=\"passowrd\" [(ngModel)]=\"user.Password\" name=\"Password\" [ngModelOptions]=\"{standalone: true}\"\n                                      pPassword  placeholder=\"Password\">          -->\n                                  </div>\n                                  <input class=\"form-control\"[(ngModel)]=\"user.Password\" name=\"Password\" [ngModelOptions]=\"{standalone: true}\"\n                                      placeholder=\"Password\" id=\"pwd\" name=\"password\" type=\"password\" value=\"\">\n                              </div>\n                              <div class=\"ui-md-2\">\n                                  <button pButton type=\"button\" (click)=\"loginUser(user)\" label=\"Go\"  class=\"ui-button-warning\"></button>\n                                   <!-- <input type=\"button\" class=\"btn btn-block btn-warning \" name=\"Go\" id=\"go\" value=\"Go\" onClick=\"loginuser();\"> onClick=\"loginuser();\"> -->\n                                  </div> \n                          </div>                                                  \n                      </fieldset>\n                  </form>\n              </div>\n          </div>\n      </div>\n  </div>\n  \n</div>\n\n</div>\n  \n</div>"
 
 /***/ }),
 
@@ -816,18 +1058,8 @@ var LoginComponent = /** @class */ (function (_super) {
         this.standby();
         this.loginService.getLogin(user).subscribe(function (data) {
             _this.ready();
-            console.log('login response' + data);
-            // this.userData = data.data;
-            // this.userData.role = new Role;
-            // this.userData.role.leader = localStorage.getItem('leader');
-            // this.userData.role.id = localStorage.getItem('id');
-            // this.userData.name = localStorage.getItem('name');
-            // this.userData.phone = localStorage.getItem('phone');   
-            // console.log('userData from ls'+ JSON.stringify(this.userData));    
+            console.log('login response' + JSON.stringify(data));
             _this.router.navigate(['main/search']);
-            // this.loginService.getRoleAccess(data).subscribe(data => {
-            //   console.log('uac data'+ JSON.stringify(data));
-            //  });
         });
     };
     LoginComponent = __decorate([
@@ -914,6 +1146,7 @@ var LoginService = /** @class */ (function () {
 function storeLocal(response) {
     localStorage.setItem('rleader', response.json().data.role.leader);
     localStorage.setItem('rid', response.json().data.role.id);
+    localStorage.setItem('rname', response.json().data.role.rname);
     localStorage.setItem('id', response.json().data.id);
     localStorage.setItem('name', response.json().data.name);
     localStorage.setItem('phone', response.json().data.phone);
@@ -979,7 +1212,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/main/main.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <app-header></app-header>\n</div>\n<div class=\"row\">\n\n  <div class=\"col-md-2\">\n      <app-side-nav></app-side-nav>\n  </div>\n\n  <div class=\"col-md-10\">\n    <router-outlet></router-outlet>\n    </div>\n</div>"
+module.exports = "<div class=\"row\">\n    <app-header></app-header>\n</div>\n\n\n   \n            <div class=\"row\">    \n                    <div class=\"col-md-2\">\n                            <app-side-nav></app-side-nav>\n                            </div>          \n                <div class=\"col-md-10\">\n                  <router-outlet></router-outlet>\n                  </div>\n  \n        </div>\n\n\n  \n"
 
 /***/ }),
 
@@ -1003,6 +1236,7 @@ var MainComponent = /** @class */ (function () {
     function MainComponent() {
     }
     MainComponent.prototype.ngOnInit = function () {
+        this.rLeader = localStorage.getItem('rleader');
     };
     MainComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
@@ -1040,7 +1274,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/media/media.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n    <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n      <loading-indicator></loading-indicator>\n    </div>\n    <div *ngSwitchCase=\"false\">\n  \n      \n          <div class=\"row\">\n            <div class=\"col-lg-12\">\n                <h3 class=\"page-header\" style=\"color: #FFFFFF\">Media</h3>    \n            </div>          \n        </div>\n  \n        <div class=\" row ui-widget-header\" style=\"padding:4px 10px; border-bottom:0 none;\">\n  <i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n  <input #gt type=\"text\" pInputTextsize=\"50\" style=\"width:15% !important\" placeholder=\"Global Filter\">\n        </div>\n        <div class=\"row\"> \n\n\n\n<p-dataTable [value]=\"mediaData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #mediaDataTable>\n            \n            <p-column field=\"name\" header=\"Media\" [style]=\"{'overflow':'visible'}\"  [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"mediaCategory\" header=\"Media Type\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"mediaName\" header=\"Media Name\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"contactNumber\" header=\"Contact Number\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"emailId\" header=\"Email Id\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n           \n            <p-column  [style]=\"{'overflow':'visible','width':'80px'}\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <div  style=\"text-align: center;\">\n                  <a style=\"color: blue;text-decoration: underline; cursor:pointer;\"\n                   (click)=\"OnEditMedia(currentRowData)\"><i class=\"fa fa-pencil-alt\"></i> \n                  </a>\n                </div>         \n              </ng-template>\n            </p-column>\n\n            <p-column  [style]=\"{'overflow':'visible','width':'80px'}\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <div  style=\"text-align: center;\">\n                  <a style=\"color: blue;text-decoration: underline; cursor:pointer;\"\n                   (click)=\"OnDeleteMedia(currentRowData)\">Edit \n                  </a>\n                </div>         \n              </ng-template>\n            </p-column>\n\n            </p-dataTable> \n          </div>\n        </div>\n      </div>"
+module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n    <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n      <loading-indicator></loading-indicator>\n    </div>\n    <div *ngSwitchCase=\"false\">        \n          <div class=\"row\">\n            <div class=\"col-lg-12\">\n                <h3 class=\"page-header\" style=\"color: #FFFFFF\">Media</h3>    \n            </div>          \n        </div>  \n        <div class=\" row ui-widget-header\" style=\"padding:4px 10px; border-bottom:0 none;\">\n  <i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n  <input #gt type=\"text\" pInputTextsize=\"50\" style=\"width:15% !important\" placeholder=\"Global Filter\">\n  <div style=\"float:right;margin-right:10px;\">\n    <button type=\"text\" (click)=\"createNewMedia()\" pButton icon=\"fa-plus\"\n[style]=\"{'float':'right','margin-right':'10px'}\">\n</button> \n  </div>\n  \n\n        </div>\n        <div class=\"row\"> \n\n<p-dataTable [value]=\"mediaData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #mediaDataTable>            \n            <p-column field=\"mediaCategory\" header=\"Media Type\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"mediaName\" header=\"Media Name\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"name\" header=\"Contact Person\" [style]=\"{'overflow':'visible'}\"  [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"contactNumber\" header=\"Contact Number\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"emailId\" header=\"Email Id\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n           \n           \n            <p-column header=\"Actions\" [style]=\"{'overflow':'visible','width':'100px'}\">\n                <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                  <div  style=\"text-align: center; \">\n                      <button type=\"text\" (click)=\"OnEditMedia(currentRowData)\" pButton \n                      icon=\"fa-pencil\"></button>                  \n                  &nbsp;&nbsp;\n                      <button type=\"text\" (click)=\"confirmDeleteMedia(currentRowData)\" pButton \n                      icon=\"fa-trash\"></button>\n                  </div>        \n                </ng-template>\n              </p-column>   \n\n            </p-dataTable> \n          </div>\n        </div>\n      </div>\n\n\n      <p-confirmDialog header=\"Confirmation\" icon=\"fa fa-question-circle\" width=\"425\" #cd>\n          <p-footer>\n              <button type=\"button\" pButton icon=\"fa-close\" label=\"Cancel\" (click)=\"cd.reject()\"></button>\n              <button type=\"button\" pButton icon=\"fa-check\" label=\"Ok\" (click)=\"cd.accept()\"></button>\n          </p-footer>\n      </p-confirmDialog>\n\n      <p-dialog [(visible)]=\"isShowNewMediaModal\" [width]=\"400\"  modal=\"true\">\n          <p-header>\n              {{modalTitle}}\n          </p-header>\n          <app-new-media [media]=\"currentMedia\" [tableData]=\"mediaData\"\n          (outputEvent)=\"refresh($event)\"></app-new-media>      \n      </p-dialog>\n  \n      <p-growl  [value]=\"msgs\" [style]=\"{'overflow':'visible'}\"></p-growl>\n"
 
 /***/ }),
 
@@ -1052,6 +1286,9 @@ module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n    <div *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__media_service__ = __webpack_require__("../../../../../src/app/media/media.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__ = __webpack_require__("../../../../../src/app/helpers/loading-indicator.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_primeng_api__ = __webpack_require__("../../../../primeng/api.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_primeng_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_primeng_api__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__media__ = __webpack_require__("../../../../../src/app/media/media.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1074,14 +1311,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var MediaComponent = /** @class */ (function (_super) {
     __extends(MediaComponent, _super);
-    function MediaComponent(mediaService) {
+    function MediaComponent(mediaService, confirmationService) {
         var _this = _super.call(this) || this;
         _this.mediaService = mediaService;
+        _this.confirmationService = confirmationService;
+        _this.currentMedia = new __WEBPACK_IMPORTED_MODULE_4__media__["a" /* Media */];
+        _this.modalTitle = "";
+        _this.msgs = [];
+        _this.isShowNewMediaModal = false;
         return _this;
     }
     MediaComponent.prototype.ngOnInit = function () {
+        this.loadMediaGridData();
+    };
+    MediaComponent.prototype.loadMediaGridData = function () {
         var _this = this;
         this.standby();
         this.mediaService.getMediaData().subscribe(function (data) {
@@ -1090,19 +1337,47 @@ var MediaComponent = /** @class */ (function (_super) {
             _this.ready();
         });
     };
-    MediaComponent.prototype.OnEditMedia = function (data) {
+    MediaComponent.prototype.confirmDeleteMedia = function (data) {
+        var _this = this;
+        this.confirmationService.confirm({
+            message: 'Are you sure to delete this record?',
+            accept: function () {
+                _this.standby();
+                _this.mediaService.deleteMedia(data._id).then(function (data) {
+                    console.log('delete res' + JSON.stringify(data));
+                    _this.mediaService.getMediaData().subscribe(function (resData) {
+                        _this.mediaData = resData;
+                    });
+                    _this.ready();
+                });
+            }
+        });
     };
-    MediaComponent.prototype.OnDeleteMedia = function (data) {
+    MediaComponent.prototype.createNewMedia = function () {
+        this.modalTitle = "Create New Media";
+        this.currentMedia = new __WEBPACK_IMPORTED_MODULE_4__media__["a" /* Media */]();
+        this.isShowNewMediaModal = true;
+    };
+    MediaComponent.prototype.OnEditMedia = function (data) {
+        this.modalTitle = "Edit Media";
+        this.currentMedia = data;
+        this.isShowNewMediaModal = true;
+    };
+    MediaComponent.prototype.refresh = function (event) {
+        this.msgs = [];
+        this.msgs.push({ severity: 'success', summary: 'Success Message', detail: 'Media data saved Successfully!' });
+        this.isShowNewMediaModal = false;
+        this.loadMediaGridData();
     };
     MediaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-media',
             template: __webpack_require__("../../../../../src/app/media/media.component.html"),
             styles: [__webpack_require__("../../../../../src/app/media/media.component.css")],
-            providers: [__WEBPACK_IMPORTED_MODULE_1__media_service__["a" /* MediaService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_1__media_service__["a" /* MediaService */], __WEBPACK_IMPORTED_MODULE_3_primeng_api__["ConfirmationService"]],
             entryComponents: [__WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__["a" /* LoadingPage */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__media_service__["a" /* MediaService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__media_service__["a" /* MediaService */], __WEBPACK_IMPORTED_MODULE_3_primeng_api__["ConfirmationService"]])
     ], MediaComponent);
     return MediaComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__["a" /* LoadingPage */]));
@@ -1151,6 +1426,41 @@ var MediaService = /** @class */ (function () {
             return res.json();
         }).catch(handleError);
     };
+    MediaService.prototype.saveMediaData = function (data) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var body = JSON.stringify({
+            'name': data.name,
+            'mediatype': data.mediaCategory,
+            'medianame': data.mediaName,
+            'mobile': data.contactNumber,
+            'email': data.emailId
+        });
+        return this.http.post(this.baseApiUrl + "/voterpulse/media/addnew", body, options).toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(handleError);
+    };
+    MediaService.prototype.updateMediaData = function (data) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        var body = JSON.stringify({
+            'name': data.name,
+            'mediatype': data.mediaCategory,
+            'medianame': data.mediaName,
+            'mobile': data.contactNumber,
+            'email': data.emailId
+        });
+        return this.http.put(this.baseApiUrl + "/voterpulse/media/" + data._id, body, options).toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(handleError);
+    };
+    MediaService.prototype.deleteMedia = function (data) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        return this.http.delete(this.baseApiUrl + "/voterpulse/media/" + data, options).toPromise()
+            .then(function (res) { return res.json(); })
+            .catch(handleError);
+    };
     MediaService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
@@ -1163,6 +1473,21 @@ function handleError(error) {
     // throw an application level error
     return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["a" /* Observable */].throw(error.json() || 'Server error');
 }
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/media/media.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Media; });
+var Media = /** @class */ (function () {
+    function Media() {
+    }
+    return Media;
+}());
+
 
 
 /***/ }),
@@ -1188,7 +1513,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/media/new-media/new-media.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  new-media works!\n</p>\n"
+module.exports = "<div class=\"modal-body\">\n  <form  [formGroup]=\"mediaForm\">\n \n\n    <div class=\"form-group row\">\n        <label>Media Type</label>\n        <input type=\"text\" class=\"form-control\" id='m_cat'  \n        [(ngModel)]=\"media.mediaCategory\" name=\"mediaCategory\" [ngModelOptions]=\"{standalone: true}\"        \n        required=\"required\" autofocus>       \n    </div>\n    <div class=\"form-group row\">\n        <label>Media Name</label>\n        <input type=\"text\" class=\"form-control\" id='m_name' \n        [(ngModel)]=\"media.mediaName\" name=\"mediaName\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>\n\n    <div class=\"form-group row\">\n        <label>Contact Person Name</label>\n        <input type=\"text\"  class=\"form-control\" id='m_person' \n        [(ngModel)]=\"media.name\" name=\"name\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>\n\n    <div class=\"form-group row\">\n        <label>Contact Number</label>\n        <input type=\"text\"  class=\"form-control\" id='m_contact' \n        [(ngModel)]=\"media.contactNumber\" name=\"contactNumber\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>\n\n    <div class=\"form-group row\">\n        <label>Email Id</label>\n        <input type=\"email\" class=\"form-control\" id='m_email'\n        [(ngModel)]=\"media.emailId\" name=\"emailId\" [ngModelOptions]=\"{standalone: true}\"  \n        required>\n    </div>\n      \n</form>\n</div>\n\n<div  style=\"text-align: center;\">\n<button type=\"button\" class=\"btn btn-primary\" (click)=\"saveMedia(media)\">Save</button>\n<input type=\"reset\" name=\"reset\" value=\"Reset\" (click)=\"reset()\" class=\"btn btn-default\" >\n</div>\n\n\n "
 
 /***/ }),
 
@@ -1198,6 +1523,9 @@ module.exports = "<p>\n  new-media works!\n</p>\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewMediaComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__media__ = __webpack_require__("../../../../../src/app/media/media.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__media_service__ = __webpack_require__("../../../../../src/app/media/media.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1208,18 +1536,71 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var NewMediaComponent = /** @class */ (function () {
-    function NewMediaComponent() {
+    function NewMediaComponent(mediaService) {
+        this.mediaService = mediaService;
+        this.outputEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
     }
     NewMediaComponent.prototype.ngOnInit = function () {
+        this.mediaForm = new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormGroup"]({
+            name: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            designation: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            department: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            contactNumber: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
+            emailId: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"]()
+        });
     };
+    NewMediaComponent.prototype.saveMedia = function (req) {
+        var _this = this;
+        console.log('add data' + JSON.stringify(req));
+        console.log(req._id);
+        if (req._id == undefined || req._id == "") {
+            // this.overlayManager.open("window-loading", null);
+            this.mediaService.saveMediaData(req).then(function (data) {
+                console.log(JSON.stringify(data));
+                _this.outputEvent.emit(_this.tableData);
+                _this.newOfficerObjectonClose();
+                // this.overlayManager.close("window-loading");
+            });
+        }
+        else {
+            // this.overlayManager.open("window-loading", null);
+            this.mediaService.updateMediaData(req).then(function (data) {
+                console.log(JSON.stringify(data));
+                _this.newOfficerObjectonClose();
+                _this.outputEvent.emit(_this.tableData);
+                // this.overlayManager.close("window-loading");  
+            });
+        }
+    };
+    NewMediaComponent.prototype.reset = function () {
+        this.media = new __WEBPACK_IMPORTED_MODULE_1__media__["a" /* Media */];
+    };
+    NewMediaComponent.prototype.newOfficerObjectonClose = function () {
+        return this.media = new __WEBPACK_IMPORTED_MODULE_1__media__["a" /* Media */];
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", Object)
+    ], NewMediaComponent.prototype, "tableData", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__media__["a" /* Media */])
+    ], NewMediaComponent.prototype, "media", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Output"])(),
+        __metadata("design:type", Object)
+    ], NewMediaComponent.prototype, "outputEvent", void 0);
     NewMediaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-new-media',
             template: __webpack_require__("../../../../../src/app/media/new-media/new-media.component.html"),
             styles: [__webpack_require__("../../../../../src/app/media/new-media/new-media.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__media_service__["a" /* MediaService */]])
     ], NewMediaComponent);
     return NewMediaComponent;
 }());
@@ -1249,7 +1630,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/officers/new-officer/new-officer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"modal-body\">\n  <form  [formGroup]=\"officerForm\">\n \n    <div class=\"form-group row\">\n        <input type=\"hidden\" id=\"u_off_no\">\n      <label>Officer Name</label>    \n      <input type=\"text\" class=\"form-control\" id='u_off_name'\n      [(ngModel)]=\"officer.name\" name=\"name\" [ngModelOptions]=\"{standalone: true}\"\n       required=\"required\" autofocus>\n     \n  </div>\n\n  <div class=\"form-group row\">\n      <label>Designation</label>\n      <input type=\"text\" class=\"form-control\" id='u_off_des'\n      [(ngModel)]=\"officer.designation\" name=\"designation\" [ngModelOptions]=\"{standalone: true}\" required>\n  </div>\n\n  <div class=\"form-group row\">\n      <label>Department</label>\n      <input type=\"text\" class=\"form-control\" id='u_off_dep'\n      [(ngModel)]=\"officer.department\" name=\"department\" [ngModelOptions]=\"{standalone: true}\" required>\n  </div>\n\n  <div class=\"form-group row\">\n      <label>Contact Number</label>\n      <input type=\"text\" class=\"form-control\" id='u_off_contact' \n      [(ngModel)]=\"officer.contactNumber\" name=\"contactNumber\" [ngModelOptions]=\"{standalone: true}\" required>\n  </div>\n\n  <div class=\"form-group row\">\n      <label>Email Id</label>\n      <input type=\"email\" class=\"form-control\" id='u_off_email' \n      [(ngModel)]=\"officer.emailId\" name=\"emailId\" [ngModelOptions]=\"{standalone: true}\" required>     \n  </div>\n</form>\n</div>\n\n<!-- <div class=\"alert alert-success\" *ngIf=\"alertmsg\">\n<strong>{{alertmsg}}</strong>\n</div> -->\n<div  style=\"text-align: center;\">\n<button type=\"button\" class=\"btn btn-primary\" (click)=\"saveOfficer(officer)\">Save</button>\n<input type=\"reset\" name=\"reset\" value=\"Reset\" class=\"btn btn-default\" >\n</div>\n\n\n "
+module.exports = "<div class=\"modal-body\">\n  <form  [formGroup]=\"officerForm\">\n \n    <div class=\"form-group row\">\n        <!-- <input type=\"hidden\" id=\"u_off_no\"> -->\n      <label>Officer Name</label>    \n      <input type=\"text\" class=\"form-control\" id='u_off_name'\n      [(ngModel)]=\"officer.name\" name=\"name\" [ngModelOptions]=\"{standalone: true}\"\n       required=\"required\" autofocus>\n     \n  </div>\n\n  <div class=\"form-group row\">\n      <label>Designation</label>\n      <input type=\"text\" class=\"form-control\" id='u_off_des'\n      [(ngModel)]=\"officer.designation\" name=\"designation\" [ngModelOptions]=\"{standalone: true}\" required>\n  </div>\n\n  <div class=\"form-group row\">\n      <label>Department</label>\n      <input type=\"text\" class=\"form-control\" id='u_off_dep'\n      [(ngModel)]=\"officer.department\" name=\"department\" [ngModelOptions]=\"{standalone: true}\" required>\n  </div>\n\n  <div class=\"form-group row\">\n      <label>Contact Number</label>\n      <input type=\"text\" class=\"form-control\" id='u_off_contact' \n      [(ngModel)]=\"officer.contactNumber\" name=\"contactNumber\" [ngModelOptions]=\"{standalone: true}\" required>\n  </div>\n\n  <div class=\"form-group row\">\n      <label>Email Id</label>\n      <input type=\"email\" class=\"form-control\" id='u_off_email' \n      [(ngModel)]=\"officer.emailId\" name=\"emailId\" [ngModelOptions]=\"{standalone: true}\" required>     \n  </div>\n</form>\n</div>\n\n<div  style=\"text-align: center;\">\n<button type=\"button\" class=\"btn btn-primary\" (click)=\"saveOfficer(officer)\">Save</button>\n<input type=\"reset\" name=\"reset\" value=\"Reset\" (click)=\"reset()\" class=\"btn btn-default\" >\n</div>\n\n\n "
 
 /***/ }),
 
@@ -1288,24 +1669,35 @@ var NewOfficerComponent = /** @class */ (function () {
             contactNumber: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"](),
             emailId: new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"]()
         });
-        //   this.officerForm = this.formBuilder.group({
-        //     QualityProjectName: ['', [Validators.required, this.checkProjectQualityNameExists]]
-        // });
     };
     NewOfficerComponent.prototype.saveOfficer = function (req) {
         var _this = this;
-        // this.overlayManager.open("window-loading", null);
-        this.officersService.saveOfficerData(req).then(function (data) {
-            if (data.Status) {
-                // this.outputEvent.emit(TableData);
+        console.log('add data' + JSON.stringify(req));
+        console.log(req._id);
+        if (req._id == undefined || req._id == "") {
+            // this.overlayManager.open("window-loading", null);
+            this.officersService.saveOfficerData(req).then(function (data) {
+                console.log(JSON.stringify(data));
+                _this.outputEvent.emit(_this.tableData);
                 _this.newOfficerObjectonClose();
                 // this.overlayManager.close("window-loading");
-            }
-        });
+            });
+        }
+        else {
+            // this.overlayManager.open("window-loading", null);
+            this.officersService.updateOfficerData(req).then(function (data) {
+                console.log(JSON.stringify(data));
+                _this.newOfficerObjectonClose();
+                _this.outputEvent.emit(_this.tableData);
+                // this.overlayManager.close("window-loading");  
+            });
+        }
+    };
+    NewOfficerComponent.prototype.reset = function () {
+        this.officer = new __WEBPACK_IMPORTED_MODULE_1__officers__["a" /* Officers */];
     };
     NewOfficerComponent.prototype.newOfficerObjectonClose = function () {
-        // this.officerForm.clearValidators();
-        return this.officer = null;
+        return this.officer = new __WEBPACK_IMPORTED_MODULE_1__officers__["a" /* Officers */];
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
@@ -1356,7 +1748,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/officers/officers.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n  <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n    <loading-indicator></loading-indicator>\n  </div>\n  <div *ngSwitchCase=\"false\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n              <h3 class=\"page-header\" style=\"color: #FFFFFF\">Officers List</h3>    \n          </div>\n          <!-- /.col-lg-12 -->\n      </div>\n\n      <div class=\"row ui-widget-header\" style=\"padding:4px 10px; border-bottom:0 none;\">\n<i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n<input #gt type=\"text\" pInputTextsize=\"50\" style=\"width:15% !important\" placeholder=\"Global Filter\">\n\n\n<button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\"\n data-target=\"#newOfficerModal\"\n style=\"float:right;margin-right: 10px;\"><i class=\"fa fa-plus\">              \n</i></button>\n\n<!-- \n<button type=\"button\" class=\"btnstyle\" (click)=\"createNew()\" pButton \n            style=\"float:right;margin-right: 10px;\"><i class=\"fa fa-plus\" aria-hidden=\"true\">              \n            </i></button>  -->\n\n</div>\n      <div class=\"row\">\n\n     \n<p-dataTable [value]=\"officersData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #officersDataTable>\n           \n            <p-column field=\"name\" header=\"Officer Name\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"designation\" header=\"Designation\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"department\" header=\"Department\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"contactNumber\" header=\"Contact Number\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"emailId\" header=\"Email Id\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n           \n            <p-column  [style]=\"{'overflow':'visible','width':'80px'}\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <div  style=\"text-align: center; \">\n                  <a style=\"color: blue;text-decoration: underline; cursor:pointer;\"\n                   (click)=\"OnEditOfficer(currentRowData)\"><i class=\"far fa-pencil\"></i>  </a>\n                </div>      \n                <div  style=\"text-align: center;\">\n                  <a style=\"color: blue;text-decoration: underline; cursor:pointer;\"\n                   (click)=\"OnDeleteOfficer(currentRowData)\">Edit \n                  </a>\n                </div>        \n              </ng-template>\n            </p-column>        \n            </p-dataTable> \n\n          </div>\n        </div>\n      </div>\n\n  \n      <button type=\"button\" class=\"btn btn-info btn-lg\" data-toggle=\"modal\" data-target=\"#myModal\">Open Modal</button>\n\n      <!-- Modal -->\n      <div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\n        <div class=\"modal-dialog\">\n      \n          <!-- Modal content-->\n          <div class=\"modal-content\">\n            <div class=\"modal-header\">\n              <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n              <h4 class=\"modal-title\">Modal Header</h4>\n            </div>\n            <div class=\"modal-body\">\n              <p>Some text in the modal.</p>\n            </div>\n            <div class=\"modal-footer\">\n              <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n            </div>\n          </div>\n      \n        </div>\n      </div>\n      \n\n\n        <div class=\"modal-dialog\">\n      <!--Create new Officer (onHidden)=\"onHidden()\" modal-lg -->\n<div id=\"newOfficerModal\" class=\"modal fade\" \n role=\"dialog\" >\n  <div class=\"modal-dialog \">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\"> \n        <h4 class=\"modal-title pull-left\">Create New Officer</h4>\n        <button type=\"button\" class=\"close pull-right\" (click)=\"newOfficerModal.hide()\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n      </div>\n      <div class=\"modal-body\">\n     <app-new-officer [officer]=\"currentOfficer\" [tableData]=\"officersData\"\n      (outputEvent)=\"refresh($event)\"></app-new-officer>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n  <div *ngSwitchCase=\"true\" style=\"margin-top:15%;margin-bottom:0\">\n    <loading-indicator></loading-indicator>\n  </div>\n  <div *ngSwitchCase=\"false\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n              <h3 class=\"page-header\" style=\"color: #FFFFFF\">Officers List</h3>    \n          </div>\n          <!-- /.col-lg-12 -->\n      </div>\n\n      <div class=\"row ui-widget-header\" style=\"padding:4px 10px; border-bottom:0 none;\">\n<i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n<input #gt type=\"text\" pInputTextsize=\"50\" style=\"width:15% !important\" placeholder=\"Global Filter\">\n\n<div style=\"float:right;margin-right:10px;\">\n    <button type=\"text\" (click)=\"createNewOfficer()\" pButton icon=\"fa-plus\"\n    [style]=\"{'float':'right','margin-right':'10px'}\">\n    </button> \n</div>\n\n</div>\n      <div class=\"row\">     \n<p-dataTable [value]=\"officersData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #officersDataTable>\n           \n            <p-column field=\"name\" header=\"Officer Name\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"designation\" header=\"Designation\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"department\" header=\"Department\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"contactNumber\" header=\"Contact Number\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"emailId\" header=\"Email Id\" [style]=\"{'overflow':'visible'}\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>           \n            <p-column header=\"Actions\" [style]=\"{'overflow':'visible','width':'100px'}\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <div  style=\"text-align: center; \">\n                    <button type=\"text\" (click)=\"OnEditOfficer(currentRowData)\" pButton \n                    icon=\"fa-pencil\"></button>                  \n                &nbsp;&nbsp;\n                    <button type=\"text\" (click)=\"confirmDeleteOfficer(currentRowData)\" pButton \n                    icon=\"fa-trash\"></button>\n                </div>        \n              </ng-template>\n            </p-column>        \n            </p-dataTable> \n\n          </div>\n        </div>\n      </div>\n      <p-confirmDialog header=\"Confirmation\" icon=\"fa fa-question-circle\" width=\"425\" #cd>\n          <p-footer>\n              <button type=\"button\" pButton icon=\"fa-close\" label=\"Cancel\" (click)=\"cd.reject()\"></button>\n              <button type=\"button\" pButton icon=\"fa-check\" label=\"Ok\" (click)=\"cd.accept()\"></button>\n          </p-footer>\n      </p-confirmDialog>\n\n      <p-dialog [(visible)]=\"isShowNewOfficerModal\" [width]=\"400\" modal=\"true\">\n        <p-header>\n            {{modalTitle}}\n        </p-header>\n        <app-new-officer [officer]=\"currentOfficer\" [tableData]=\"officersData\"\n        (outputEvent)=\"refresh($event)\"></app-new-officer>      \n    </p-dialog>\n  \n    <p-growl  [value]=\"msgs\" [style]=\"{'overflow':'visible'}\"></p-growl>\n"
 
 /***/ }),
 
@@ -1369,6 +1761,8 @@ module.exports = "<div [ngSwitch]=\"loading\" class=\"full-height\">\n  <div *ng
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__officers_service__ = __webpack_require__("../../../../../src/app/officers/officers.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__ = __webpack_require__("../../../../../src/app/helpers/loading-indicator.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__officers__ = __webpack_require__("../../../../../src/app/officers/officers.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_primeng_api__ = __webpack_require__("../../../../primeng/api.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_primeng_api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_primeng_api__);
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1392,18 +1786,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var OfficersComponent = /** @class */ (function (_super) {
     __extends(OfficersComponent, _super);
-    function OfficersComponent(officerService) {
+    function OfficersComponent(officerService, confirmationService) {
         var _this = _super.call(this) || this;
         _this.officerService = officerService;
+        _this.confirmationService = confirmationService;
         _this.currentOfficer = new __WEBPACK_IMPORTED_MODULE_3__officers__["a" /* Officers */];
+        _this.modalTitle = "";
+        _this.msgs = [];
         _this.isShowNewOfficerModal = false;
         return _this;
     }
-    OfficersComponent.prototype.ngOnInit = function () {
+    OfficersComponent.prototype.confirmDeleteOfficer = function (data) {
         var _this = this;
-        console.log('oninit');
+        this.confirmationService.confirm({
+            message: 'Are you sure to delete this record?',
+            accept: function () {
+                _this.standby();
+                _this.officerService.deleteOfficer(data._id).then(function (data) {
+                    console.log('delete res' + JSON.stringify(data));
+                    _this.officerService.getOfficersData().subscribe(function (resData) {
+                        _this.officersData = resData;
+                    });
+                    _this.ready();
+                });
+            }
+        });
+    };
+    OfficersComponent.prototype.ngOnInit = function () {
+        this.loadOfficerGridData();
+    };
+    OfficersComponent.prototype.loadOfficerGridData = function () {
+        var _this = this;
         this.standby();
         this.officerService.getOfficersData().subscribe(function (data) {
             console.log(JSON.stringify(data));
@@ -1412,28 +1828,31 @@ var OfficersComponent = /** @class */ (function (_super) {
             console.log(_this.officersData);
         });
     };
-    OfficersComponent.prototype.createNew = function () {
+    OfficersComponent.prototype.createNewOfficer = function () {
+        this.modalTitle = "Create New Officer";
         this.currentOfficer = new __WEBPACK_IMPORTED_MODULE_3__officers__["a" /* Officers */]();
         this.isShowNewOfficerModal = true;
     };
     OfficersComponent.prototype.OnEditOfficer = function (data) {
+        this.modalTitle = "Edit Officer";
         this.currentOfficer = data;
         this.isShowNewOfficerModal = true;
     };
-    OfficersComponent.prototype.OnDeleteOfficer = function (data) {
-        this.officerService.deleteOfficer(data.id).then(function (data) {
-            console.log(JSON.stringify(data));
-        });
+    OfficersComponent.prototype.refresh = function (event) {
+        this.msgs = [];
+        this.msgs.push({ severity: 'success', summary: 'Success Message', detail: 'Officer data saved Successfully!' });
+        this.isShowNewOfficerModal = false;
+        this.loadOfficerGridData();
     };
     OfficersComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-officers',
             template: __webpack_require__("../../../../../src/app/officers/officers.component.html"),
             styles: [__webpack_require__("../../../../../src/app/officers/officers.component.css")],
-            providers: [__WEBPACK_IMPORTED_MODULE_1__officers_service__["a" /* OfficersService */]],
+            providers: [__WEBPACK_IMPORTED_MODULE_1__officers_service__["a" /* OfficersService */], __WEBPACK_IMPORTED_MODULE_4_primeng_api__["ConfirmationService"]],
             entryComponents: [__WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__["a" /* LoadingPage */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__officers_service__["a" /* OfficersService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__officers_service__["a" /* OfficersService */], __WEBPACK_IMPORTED_MODULE_4_primeng_api__["ConfirmationService"]])
     ], OfficersComponent);
     return OfficersComponent;
 }(__WEBPACK_IMPORTED_MODULE_2__helpers_loading_indicator_component__["a" /* LoadingPage */]));
@@ -1507,14 +1926,14 @@ var OfficersService = /** @class */ (function () {
             'contactNumber': data.contactNumber,
             'emailId': data.emailId
         });
-        return this.http.put(this.baseApiUrl + "/voterpulse/officers?officersID=" + data.id, body, options).toPromise()
+        return this.http.put(this.baseApiUrl + "/voterpulse/officers/" + data._id, body, options).toPromise()
             .then(function (res) { return res.json(); })
             .catch(handleError);
     };
     OfficersService.prototype.deleteOfficer = function (data) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
         var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
-        return this.http.delete(this.baseApiUrl + "/voterpulse/officers?officersID=" + data, options).toPromise()
+        return this.http.delete(this.baseApiUrl + "/voterpulse/officers/" + data, options).toPromise()
             .then(function (res) { return res.json(); })
             .catch(handleError);
     };
@@ -1774,7 +2193,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/search-info/search-info.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"container\">\n    <div id=\"page-wrapper\">\n    <div class=\"row\">\n        <div class=\"col-lg-12\">\n            <h3 class=\"page-header white\">Voters List</h3>\n        </div>\n    </div>\n    <div class=\"panel panel-brightblue\">\n        <div class=\"panel-body\">\n            <form action=\"#\" id=\"myForm\">\n                         \n                <div class=\"row\">\n                    <div class=\"col-sm\">\n                        \n                        <select [(ngModel)]=\"assemblyDataValue\" *ngIf='userRes.showAssembly==\"true\"' (ngModelChange) =\"changeAssembly()\" \n                        name=\"assemblyDataValue\" [ngModelOptions]=\"{standalone: true}\"\n                         id=\"cons\" class=\"form-control\">\n                            <option value=\"0\" disabled >Select Constituency</option>\n                            <option *ngFor=\"let n of assemblyDataList\" value={{n.assemblyConstituencyId}}><li>{{n.assemblyConstituencyName}}</li></option>          \n                        </select>\n                    </div>\n                    \n                    <div class=\"col-sm\">\n                        <select [(ngModel)]=\"limitDataValue\" *ngIf='userRes.showLimit==\"true\"' (ngModelChange) =\"changeLimit()\" \n                        name=\"limitDataValue\" [ngModelOptions]=\"{standalone: true}\"\n                         id=\"cons\" class=\"form-control\">\n                            <option value=\"\">Select Limits</option>\n                            <option *ngFor=\"let n of limitDataList\" value={{n.name}}><li>{{n.name}}</li></option>          \n                        </select>                      \n                    </div>\n                    <div class=\"col-sm\">                            \n                            <select [(ngModel)]=\"pollingStationArea\" *ngIf='userRes.showArea==\"true\"' (ngModelChange) =\"changePollingStation()\" \n                        name=\"pollingStationArea\" [ngModelOptions]=\"{standalone: true}\"\n                         id=\"cons\" class=\"form-control\">\n                            <option value=\"\">Select Polling Station Area</option>\n                            <option *ngFor=\"let n of pollingStationDataList\" value={{n.pollingStationName}}><li>{{n.pollingStationName}}</li></option>          \n                        </select>\n                    </div>\n                    <div class=\"col-sm\">\n                            <select [(ngModel)]=\"boothDataValue\" *ngIf='userRes.showBooth==\"true\"'  \n                        name=\"boothDataValue\" [ngModelOptions]=\"{standalone: true}\"\n                         id=\"cons\" class=\"form-control\">\n                            <option value=\"\">Select Polling Station</option>\n                            <option *ngFor=\"let n of boothDataList\" value={{n.pollingStationNameId}}><li>{{n.pollingStationLocation}}</li></option>          \n                        </select>\n                    </div>\n                </div>\n\n               \n\n                <div class=\"row gap\">\n                    <div class=\"col-sm-6\" id=\"namefield2\">\n                        <input type=\"text\" class=\"form-control\" id=\"voterName\" [(ngModel)]=\"voterName\"\n                        name=\"voterName\" [ngModelOptions]=\"{standalone: true}\"\n                        placeholder=\"Enter Voter Name / Voter Id Name\">\n\n                    </div>\n                    <div class=\"col-sm-6\">\n                        <fieldset id=\"group1\" >\n                            <input type=\"radio\" value=\"1\" name=\"typeGroup\" [(ngModel)]=\"type\" checked=\"checked\"> All\n                            <input type=\"radio\" value=\"2\" name=\"typeGroup\" [(ngModel)]=\"type\"> Booth Agents\n                            <input type=\"radio\" value=\"3\" name=\"typeGroup\" [(ngModel)]=\"type\"> Leader\n                            <input type=\"radio\" value=\"4\" name=\"typeGroup\" [(ngModel)]=\"type\"> VIP\n                        </fieldset>                      \n                    </div>\n\n                </div>\n                <div class=\"row gap\" id=\"buttons\">\n                    <div class=\"col-sm-6 gap\">\n                        <button type=\"reset\" (click)=\"reset()\" class=\"btn btn-default col-sm-3 col-xs-12 pull-right\">Reset</button>\n                    </div>\n                    <div class=\"col-sm-6 gap\">\n                        <button type=\"button\" (click)=\"searchData()\" class=\"btn btn-warning col-sm-3 col-xs-12\" id=\"go\">Go</button>\n                    </div>\n                </div>\n\n            </form>\n        </div>\n        \n    </div>\n\n<div>\n        <div class=\"ui-widget-header\" style=\"padding:4px 10px;border-bottom: 0 none\">\n                <i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n                <input #gt type=\"text\" pInputText size=\"50\" style=\"width:15% !important;\" placeholder=\" Global Filter\">        \n                </div>\n\n</div>\n\n    \n    <div class=\"row\" id=\"searchview\">\n        <div class=\"col-lg-12\">\n            \n        <p-dataTable [value]=\"votersData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #votersDataTable>          \n            <p-column field=\"name\" header=\"Name\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"fatherMotherHusand\" header=\"Father/Husband Name\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"mobileNumber\" header=\"Mobile Number\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"sex\" header=\"Gender\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"age\" header=\"Age\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"IDNO\" header=\"Voter Id\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>            \n            <!-- <p-column  [style]=\"{'overflow':'visible','width':'80px'}\" *ngIf=\"optionflag\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <div  style=\"text-align: center;\">\n                  <a style=\"color: blue;text-decoration: underline; cursor:pointer;\" (click)=\"OnEditQualityProject(currentRowData)\">Edit </a>\n                </div>         \n              </ng-template>\n            </p-column> -->\n            </p-dataTable>    \n            <!-- <div class=\"panel panel-default\">                \n                <div class=\"panel-body\" id=\"voterinfo\">\n                </div>               \n            </div> -->\n           \n        </div>\n        \n    </div>\n\n\n</div>\n<!-- /#page-wrapper -->\n\n</div>"
+module.exports = "<div id=\"container\">\n    <div id=\"page-wrapper\">\n    <div class=\"row\">\n        <div class=\"col-lg-12\">\n            <h3 class=\"page-header white\">Voters List</h3>\n        </div>\n    </div>\n    <div class=\"panel panel-brightblue\">\n        <div class=\"panel-body\">\n            <form action=\"#\" id=\"myForm\">\n                         \n                <div class=\"row\">\n                    <div class=\"col-sm\">\n                        \n                        <select [(ngModel)]=\"assemblyDataValue\" *ngIf='userRes.showAssembly==\"true\"' (ngModelChange) =\"changeAssembly()\" \n                        name=\"assemblyDataValue\" [ngModelOptions]=\"{standalone: true}\"\n                         id=\"cons\" class=\"form-control\">\n                            <option value=\"0\" disabled >Select Constituency</option>\n                            <option *ngFor=\"let n of assemblyDataList\" value={{n.assemblyConstituencyId}}><li>{{n.assemblyConstituencyName}}</li></option>          \n                        </select>\n                    </div>\n                    \n                    <div class=\"col-sm\">\n                        <select [(ngModel)]=\"limitDataValue\" *ngIf='userRes.showLimit==\"true\"' (ngModelChange) =\"changeLimit()\" \n                        name=\"limitDataValue\" [ngModelOptions]=\"{standalone: true}\"\n                         id=\"cons\" class=\"form-control\">\n                            <option value=\"\">Select Limits</option>\n                            <option *ngFor=\"let n of limitDataList\" value={{n.name}}><li>{{n.name}}</li></option>          \n                        </select>                      \n                    </div>\n                    <div class=\"col-sm\">                            \n                            <select [(ngModel)]=\"pollingStationArea\" *ngIf='userRes.showArea==\"true\"' (ngModelChange) =\"changePollingStation()\" \n                        name=\"pollingStationArea\" [ngModelOptions]=\"{standalone: true}\"\n                         id=\"cons\" class=\"form-control\">\n                            <option value=\"\">Select Polling Station Area</option>\n                            <option *ngFor=\"let n of pollingStationDataList\" value={{n.name}}><li>{{n.name}}</li></option>          \n                        </select>\n                    </div>\n                    <div class=\"col-sm\">\n                            <select [(ngModel)]=\"boothDataValue\" *ngIf='userRes.showBooth==\"true\"'  \n                        name=\"boothDataValue\" [ngModelOptions]=\"{standalone: true}\"\n                         id=\"cons\" class=\"form-control\">\n                            <option value=\"\">Select Polling Station</option>\n                            <option *ngFor=\"let n of boothDataList\" value={{n.pollingStationNameId}}><li>{{n.pollingStationLocation}}</li></option>          \n                        </select>\n                    </div>\n                </div>\n\n               \n\n                <div class=\"row gap\">\n                    <div class=\"col-sm-6\" id=\"namefield2\">\n                        <input type=\"text\" class=\"form-control\" id=\"voterName\" [(ngModel)]=\"voterName\"\n                        name=\"voterName\" [ngModelOptions]=\"{standalone: true}\"\n                        placeholder=\"Enter Voter Name / Voter Id Name\">\n\n                    </div>\n                    <div class=\"col-sm-6\">\n                        <fieldset id=\"group1\" >\n                            <input type=\"radio\" value=\"1\" name=\"typeGroup\" [(ngModel)]=\"type\" checked=\"checked\"> All\n                            <input type=\"radio\" value=\"2\" name=\"typeGroup\" [(ngModel)]=\"type\"> Booth Agents\n                            <input type=\"radio\" value=\"3\" name=\"typeGroup\" [(ngModel)]=\"type\"> Leader\n                            <input type=\"radio\" value=\"4\" name=\"typeGroup\" [(ngModel)]=\"type\"> VIP\n                        </fieldset>                      \n                    </div>\n\n                </div>\n                <div class=\"row gap\" id=\"buttons\">\n                    <div class=\"col-sm-6 gap\">\n                        <button type=\"reset\" (click)=\"reset()\" class=\"btn btn-default col-sm-3 col-xs-12 pull-right\">Reset</button>\n                    </div>\n                    <div class=\"col-sm-6 gap\">\n                        <button type=\"button\" (click)=\"searchData()\" class=\"btn btn-warning col-sm-3 col-xs-12\" id=\"go\">Go</button>\n                    </div>\n                </div>\n\n            </form>\n        </div>\n        \n    </div>\n\n<div>\n        <div class=\"ui-widget-header\" style=\"padding:4px 10px;border-bottom: 0 none\">\n                <i class=\"fa fa-search\" style=\"margin:4px 4px 0 0\"></i>\n                <input #gt type=\"text\" pInputText size=\"50\" style=\"width:15% !important;\" placeholder=\" Global Filter\">        \n                </div>\n\n</div>\n\n    \n    <div class=\"row\" id=\"searchview\">\n        <div class=\"col-lg-12\">\n            \n        <p-dataTable [value]=\"votersData\" [rows]=\"10\" [paginator]=\"true\" [rowsPerPageOptions]=\"[10,20,30]\"\n            [responsive]=\"true\" [globalFilter]=\"gt\" #votersDataTable>          \n            <p-column field=\"name\" header=\"Name\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"fatherMotherHusand\" header=\"Father/Husband Name\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>      \n            <p-column field=\"mobileNumber\" header=\"Mobile Number\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"sex\" header=\"Gender\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"age\" header=\"Age\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>\n            <p-column field=\"IDNO\" header=\"Voter Id\" [sortable]=\"true\" [filter]=\"true\" filterPlaceholder=\"Search\"></p-column>            \n            <!-- <p-column  [style]=\"{'overflow':'visible','width':'80px'}\" *ngIf=\"optionflag\">\n              <ng-template let-col let-currentRowData=\"rowData\" pTemplate=\"body\">\n                <div  style=\"text-align: center;\">\n                  <a style=\"color: blue;text-decoration: underline; cursor:pointer;\" (click)=\"OnEditQualityProject(currentRowData)\">Edit </a>\n                </div>         \n              </ng-template>\n            </p-column> -->\n            </p-dataTable>    \n            <!-- <div class=\"panel panel-default\">                \n                <div class=\"panel-body\" id=\"voterinfo\">\n                </div>               \n            </div> -->\n           \n        </div>\n        \n    </div>\n\n\n</div>\n<!-- /#page-wrapper -->\n\n</div>"
 
 /***/ }),
 
@@ -1801,12 +2220,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SearchInfoComponent = /** @class */ (function () {
     function SearchInfoComponent(searchService) {
         this.searchService = searchService;
-        this.assemblyDataValue = "";
+        this.assemblyDataValue = "0";
         this.limitDataValue = "";
         this.pollingStationArea = "";
         this.boothDataValue = "";
         this.voterName = "";
-        this.type = 0;
+        this.type = 1;
         this.search = new __WEBPACK_IMPORTED_MODULE_2__voter__["a" /* Search */];
         this.userRes = new __WEBPACK_IMPORTED_MODULE_2__voter__["b" /* UserRestriction */];
     }
@@ -1819,6 +2238,7 @@ var SearchInfoComponent = /** @class */ (function () {
             password: localStorage.getItem('password'),
             role: {
                 leader: localStorage.getItem('rleader'),
+                rname: localStorage.getItem('rname'),
                 id: localStorage.getItem('rid')
             }
         };
@@ -1835,6 +2255,9 @@ var SearchInfoComponent = /** @class */ (function () {
             else if (rleader == "limits") {
                 _this.pollingStationDataList = data.Areadata;
             }
+            else if (rleader == "area") {
+                _this.boothDataList = data.Areadata;
+            }
         });
     };
     SearchInfoComponent.prototype.changeAssembly = function () {
@@ -1843,14 +2266,27 @@ var SearchInfoComponent = /** @class */ (function () {
         this.searchService.getLimitData(this.assemblyDataValue).subscribe(function (data) {
             console.log('limit' + JSON.stringify(data));
             _this.limitDataList = data;
+            _this.pollingStationDataList = [];
+            _this.boothDataList = [];
+            _this.limitDataValue = "";
+            _this.pollingStationArea = "";
+            _this.boothDataValue = "";
         });
     };
     SearchInfoComponent.prototype.changeLimit = function () {
         var _this = this;
+        var reqString;
         console.log('xfv' + this.limitDataValue);
-        this.searchService.getPollingStationData(this.limitDataValue).subscribe(function (data) {
+        if (this.limitDataValue == "Rural Mandal")
+            reqString = "RuralMandal";
+        else
+            reqString = this.limitDataValue;
+        this.searchService.getPollingStationData(reqString).subscribe(function (data) {
             console.log('polling Station' + JSON.stringify(data));
             _this.pollingStationDataList = data;
+            _this.boothDataList = [];
+            _this.pollingStationArea = "";
+            _this.boothDataValue = "";
         });
     };
     SearchInfoComponent.prototype.changePollingStation = function () {
@@ -1859,13 +2295,20 @@ var SearchInfoComponent = /** @class */ (function () {
         this.searchService.getBoothData(this.pollingStationArea).subscribe(function (data) {
             console.log('booth data' + JSON.stringify(data));
             _this.boothDataList = data;
+            _this.boothDataValue = "";
         });
     };
     SearchInfoComponent.prototype.searchData = function () {
         var _this = this;
         console.log(this.assemblyDataValue);
+        var reqString;
+        console.log('xfv' + this.limitDataValue);
+        if (this.limitDataValue == "Rural Mandal")
+            reqString = "Rural+Mandal";
+        else
+            reqString = this.limitDataValue;
         this.search.cid = this.assemblyDataValue;
-        this.search.limits = this.limitDataValue;
+        this.search.limits = reqString;
         this.search.psarea = this.pollingStationArea;
         this.search.psid = this.boothDataValue;
         this.search.vname = this.voterName;
@@ -1882,7 +2325,7 @@ var SearchInfoComponent = /** @class */ (function () {
         this.pollingStationArea = "";
         this.boothDataValue = "";
         this.voterName = "";
-        this.type = 0;
+        this.type = 1;
         this.votersData = [];
     };
     SearchInfoComponent = __decorate([
@@ -2197,7 +2640,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".sidebar\r\n{\r\n    width:auto !important;\r\n}", ""]);
+exports.push([module.i, ".sidebar\r\n{\r\n    width:auto !important;\r\n}\r\n.disablecls{    \r\n    color: gray;\r\n    cursor: not-allowed;\r\n    text-decoration: underline;\r\n}", ""]);
 
 // exports
 
@@ -2210,7 +2653,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/side-nav/side-nav.component.html":
 /***/ (function(module, exports) {
 
-module.exports = " <!-- /.navbar-top-links -->\n <div class=\"navbar-default sidebar\" role=\"navigation\" id=\"sidebar\">\n  <div class=\"sidebar-nav navbar-collapse\">\n      <ul class=\"nav\" id=\"side-menu\">\n         \n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/search']\" data-toggle=\"tooltip\" title=\"Search\" data-placement=\"right\"><i class=\"fa fa-search fa-fw fa-1x\"></i> <span> Search Voters</span></a>\n          </li>\n          <li \n           [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/reports']\" data-toggle=\"tooltip\" title=\"Reports\" data-placement=\"right\"><i class=\"fa fa-bar-chart-o fa-fw fa-1x\"></i> <span> Reports</span></a>\n          </li>\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/sendsms']\" data-toggle=\"tooltip\" title=\"Send SMS\" data-placement=\"right\"><i class=\"fa fa-comments fa-fw fa-1x\"></i> <span> Send SMS</span></a>\n          </li>\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/sendivr']\" data-toggle=\"tooltip\" title=\"Send IVR Call\" data-placement=\"right\"><i class=\"fa fa-phone fa-fw fa-1x\"></i> <span> Send IVR Message</span></a>\n          </li>\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/officers']\" data-toggle=\"tooltip\" title=\"Officers\" data-placement=\"right\"><i class=\"fa fa-user-secret fa-fw fa-1x\"></i> <span> Officers</span></a>\n          </li>\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/media']\" data-toggle=\"tooltip\" title=\"Media\" data-placement=\"right\"><i class=\"fa fa-tv fa-fw fa-1x\"></i> <span> Media</span></a>\n          </li>\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/events']\" data-toggle=\"tooltip\" title=\"Events\" data-placement=\"right\"><i class=\"fa fa-calendar fa-fw fa-1x\"></i> <span> Events</span></a>\n          </li>\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/pollingStation']\" data-toggle=\"tooltip\" title=\"Polling Stations\" data-placement=\"right\"><i class=\"fa fa-book fa-fw fa-1x\"></i> <span> Polling Stations</span></a>\n          </li>\n          <li [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/electionResult']\" data-toggle=\"tooltip\" title=\"Previous Election Results\" data-placement=\"right\"><i class=\"fa fa-file fa-fw fa-1x\"></i> <span> Previous Election Results</span></a>\n          </li>\n\n      </ul>\n  </div>\n\n      <!-- /.sidebar-collapse -->\n    </div>"
+module.exports = " <!-- /.navbar-top-links -->\n\n <div class=\"navbar-default sidebar\" role=\"navigation\" id=\"sidebar\">\n  <div class=\"sidebar-nav navbar-collapse\">\n      <ul class=\"nav\" id=\"side-menu\">\n         <!-- Since this is the only option available inn these roles im hiding this search menu too -->\n          <li \n          [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/search']\" data-toggle=\"tooltip\" title=\"Search\" data-placement=\"right\"><i class=\"fa fa-search fa-fw fa-1x\"></i> <span> Search Voters</span></a>\n          </li>          \n          <li \n           [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/reports']\" data-toggle=\"tooltip\" title=\"Reports\" data-placement=\"right\"><i class=\"fa fa-bar-chart-o fa-fw fa-1x\"></i> <span> Reports</span></a>\n          </li>\n          <li \n          [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/sendsms']\" data-toggle=\"tooltip\" title=\"Send SMS\" data-placement=\"right\"><i class=\"fa fa-comments fa-fw fa-1x\"></i> <span> Send SMS</span></a>\n          </li>\n          <li \n          [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/sendivr']\" data-toggle=\"tooltip\" title=\"Send IVR Call\" data-placement=\"right\"><i class=\"fa fa-phone fa-fw fa-1x\"></i> <span> Send IVR Message</span></a>\n          </li>\n          <li   [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/officers']\" data-toggle=\"tooltip\" title=\"Officers\" data-placement=\"right\"><i class=\"fa fa-user-secret fa-fw fa-1x\"></i> <span> Officers</span></a>\n          </li>\n          <li   [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/media']\" data-toggle=\"tooltip\" title=\"Media\" data-placement=\"right\"><i class=\"fa fa-tv fa-fw fa-1x\"></i> <span> Media</span></a>\n          </li>\n          <li   [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/events']\" data-toggle=\"tooltip\" title=\"Events\" data-placement=\"right\"><i class=\"fa fa-calendar fa-fw fa-1x\"></i> <span> Events</span></a>\n          </li>\n          <li   [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/pollingStation']\" data-toggle=\"tooltip\" title=\"Polling Stations\" data-placement=\"right\"><i class=\"fa fa-book fa-fw fa-1x\"></i> <span> Polling Stations</span></a>\n          </li>\n          <li *ngIf='rLeader!=\"limits\" && rLeader!= \"area\" && rLeader!=\"booth\"'\n          [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\">\n              <a [routerLink]=\"['/main/electionResult']\" data-toggle=\"tooltip\" title=\"Previous Election Results\" data-placement=\"right\"><i class=\"fa fa-file fa-fw fa-1x\"></i> <span> Previous Election Results</span></a>\n          </li>\n\n      </ul>\n  </div>\n\n      <!-- /.sidebar-collapse -->\n    </div>\n\n\n"
 
 /***/ }),
 
@@ -2232,9 +2675,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var SideNavComponent = /** @class */ (function () {
     function SideNavComponent() {
+        this.isClassDisable = false;
     }
     SideNavComponent.prototype.ngOnInit = function () {
-        this.rLeader = localStorage.getItem('rLeader');
+        this.rLeader = localStorage.getItem('rleader');
+        if (this.rLeader == "limits" || this.rLeader == "area" || this.rLeader == "booth") {
+            this.isClassDisable = true;
+        }
     };
     SideNavComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({

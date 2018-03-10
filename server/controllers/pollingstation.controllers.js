@@ -1,13 +1,16 @@
 var mongoose = require('mongoose');
 var PollingStation = mongoose.model('PollingStation');
+var Area = mongoose.model('Area');
 
 //Get by Limit ID
 module.exports.pollingstationGetByLimit = function (req, res) {
     var limitId = req.query.limitId;
     console.log(limitId);
-    PollingStation
+    var query = {limitName: limitId};
+    Area
         .find({ limitName: limitId})
         .exec(function (err, doc) {
+            console.log(doc);
             res
                 .status(200)
                 .json(doc);

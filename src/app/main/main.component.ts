@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-
+  rLeader:string;
   constructor() { }
 
   ngOnInit() {
+    this.rLeader= localStorage.getItem('rleader');
+
   }
 
 }

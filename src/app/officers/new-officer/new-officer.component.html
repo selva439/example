@@ -2,7 +2,7 @@
   <form  [formGroup]="officerForm">
  
     <div class="form-group row">
-        <input type="hidden" id="u_off_no">
+        <!-- <input type="hidden" id="u_off_no"> -->
       <label>Officer Name</label>    
       <input type="text" class="form-control" id='u_off_name'
       [(ngModel)]="officer.name" name="name" [ngModelOptions]="{standalone: true}"
@@ -36,12 +36,9 @@
 </form>
 </div>
 
-<!-- <div class="alert alert-success" *ngIf="alertmsg">
-<strong>{{alertmsg}}</strong>
-</div> -->
 <div  style="text-align: center;">
 <button type="button" class="btn btn-primary" (click)="saveOfficer(officer)">Save</button>
-<input type="reset" name="reset" value="Reset" class="btn btn-default" >
+<input type="reset" name="reset" value="Reset" (click)="reset()" class="btn btn-default" >
 </div>
 
 

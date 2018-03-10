@@ -30,7 +30,7 @@ export class Search
     psarea:string;
     psid:string;
     vname:string;
-    type:string;
+    type:number;
 }
 export class Voter
 {

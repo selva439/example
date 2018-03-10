@@ -51,7 +51,7 @@ updateOfficerData(data: Officers)
         'contactNumber': data.contactNumber,
         'emailId':data.emailId
     });    
-    return this.http.put(`${this.baseApiUrl}/voterpulse/officers?officersID=`+data.id, body, options).toPromise()
+    return this.http.put(`${this.baseApiUrl}/voterpulse/officers/`+data._id, body, options).toPromise()
         .then(res => res.json())
         .catch(handleError);
    
@@ -60,7 +60,7 @@ deleteOfficer(data)
 {
     let headers = new Headers({ 'Content-Type': 'application/json' });
     let options = new RequestOptions({ headers: headers });
-    return this.http.delete(`${this.baseApiUrl}/voterpulse/officers?officersID=`+data, options).toPromise()
+    return this.http.delete(`${this.baseApiUrl}/voterpulse/officers/`+data, options).toPromise()
         .then(res => res.json())
         .catch(handleError);
 }

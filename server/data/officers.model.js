@@ -1,9 +1,7 @@
 var mongoose = require('mongoose');
 
 var officersSchema = new mongoose.Schema({
-    id : {
-        type : Number
-    },
+    
     name: {
         type: String,
         required : true

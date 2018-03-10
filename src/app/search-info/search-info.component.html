@@ -33,7 +33,7 @@
                         name="pollingStationArea" [ngModelOptions]="{standalone: true}"
                          id="cons" class="form-control">
                             <option value="">Select Polling Station Area</option>
-                            <option *ngFor="let n of pollingStationDataList" value={{n.pollingStationName}}><li>{{n.pollingStationName}}</li></option>          
+                            <option *ngFor="let n of pollingStationDataList" value={{n.name}}><li>{{n.name}}</li></option>          
                         </select>
                     </div>
                     <div class="col-sm">

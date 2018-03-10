@@ -32,25 +32,9 @@ export class LoginComponent extends LoadingPage implements OnInit {
   this.standby();  
   this.loginService.getLogin(user).subscribe(data => {          
     this.ready();
-    console.log('login response'+data);
-    // this.userData = data.data;
-    // this.userData.role = new Role;
-    // this.userData.role.leader = localStorage.getItem('leader');
-    // this.userData.role.id = localStorage.getItem('id');
-    // this.userData.name = localStorage.getItem('name');
-    // this.userData.phone = localStorage.getItem('phone');   
-    // console.log('userData from ls'+ JSON.stringify(this.userData));    
-
+    console.log('login response'+ JSON.stringify(data));    
     this.router.navigate(['main/search']);
-
-    // this.loginService.getRoleAccess(data).subscribe(data => {
-    //   console.log('uac data'+ JSON.stringify(data));
-      
-    //  });
-
-  });
-  
-  
+  });    
  }
   
 }

@@ -1,8 +1,9 @@
 export class Media{
-    name: string;
-mediatype: string;
-medianame: string;
-mobile: string;
-email : string;
+    _id:string;    
+    mediaCategory: string;
+mediaName: string;
+name: string;
+contactNumber: string;
+emailId : string;
 }
 
