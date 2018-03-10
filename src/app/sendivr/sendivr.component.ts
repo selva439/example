@@ -133,7 +133,6 @@ export class SendivrComponent implements OnInit  {
 
     fileUpload(event): void{
       this.ivrMessage = event.target.files[0];
-      console.log('file da dei '+ this.ivrMessage);
     }
     
 sendIVR()
