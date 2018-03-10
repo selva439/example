@@ -1,3 +1,113 @@
-<p>
-  sendivr works!
-</p>
+<div id="container">
+    <div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header white">Send IVR</h3>
+        </div>
+    </div>
+    <div class="panel panel-brightblue">
+        <div class="panel-body">
+            <form action="#" id="myForm">
+                         
+                <div class="row">
+                    <div class="col-sm">
+                        
+                        <select [(ngModel)]="assemblyDataValue" *ngIf='userRes.showAssembly=="true"' (ngModelChange) ="changeAssembly()" 
+                        name="assemblyDataValue" [ngModelOptions]="{standalone: true}"
+                         id="cons" class="form-control">
+                            <option value="0" disabled >Select Constituency</option>
+                            <option *ngFor="let n of assemblyDataList" value={{n.assemblyConstituencyId}}><li>{{n.assemblyConstituencyName}}</li></option>          
+                        </select>
+                    </div>
+                    
+                    <div class="col-sm">
+                        <select [(ngModel)]="limitDataValue" *ngIf='userRes.showLimit=="true"' (ngModelChange) ="changeLimit()" 
+                        name="limitDataValue" [ngModelOptions]="{standalone: true}"
+                         id="cons" class="form-control">
+                            <option value="">Select Limits</option>
+                            <option *ngFor="let n of limitDataList" value={{n.name}}><li>{{n.name}}</li></option>          
+                        </select>                      
+                    </div>
+                    <div class="col-sm">                            
+                            <select [(ngModel)]="pollingStationArea" *ngIf='userRes.showArea=="true"' (ngModelChange) ="changePollingStation()" 
+                        name="pollingStationArea" [ngModelOptions]="{standalone: true}"
+                         id="cons" class="form-control">
+                            <option value="">Select Polling Station Area</option>
+                            <option *ngFor="let n of pollingStationDataList" value={{n.name}}><li>{{n.name}}</li></option>          
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                            <select [(ngModel)]="boothDataValue" *ngIf='userRes.showBooth=="true"'  
+                        name="boothDataValue" [ngModelOptions]="{standalone: true}"
+                         id="cons" class="form-control">
+                            <option value="">Select Polling Station</option>
+                            <option *ngFor="let n of boothDataList" value={{n.pollingStationNameId}}><li>{{n.pollingStationLocation}}</li></option>          
+                        </select>
+                    </div>
+                      <div class="col-sm">
+                            <select [(ngModel)]="categoryValue" (ngModelChange) ="changeCategories(n)"
+                        name="categoryValue" [ngModelOptions]="{standalone: true}"
+                         id="cons" class="form-control">
+                            <option value="">Select Filter</option>
+                            <option *ngFor="let n of categoryList" value={{n}}><li>{{n}}</li></option>          
+                        </select>
+                    </div>
+                      <div class="col-sm">
+                            <select [(ngModel)]="subCategoryValue"
+                        name="subCategoryValue" [ngModelOptions]="{standalone: true}"
+                         id="cons" class="form-control">
+                            <option value="">Select Filter</option>
+                            <option *ngFor="let n of categorySublist" value={{n}}><li>{{n}}</li></option>          
+                        </select>
+                    </div>
+                     <div class="col-sm">
+                        <input [(ngModel)]="ivrMessage" (change)="fileUpload($event)" name="ivrMessage" id="ivrMessage" type="file" placeholder="Choose File"/>
+                    </div>
+                </div>
+
+               
+
+                <!-- div class="row gap">
+                    <div class="col-sm-6" id="namefield2">
+                        <input type="text" class="form-control" id="voterName" [(ngModel)]="voterName"
+                        name="voterName" [ngModelOptions]="{standalone: true}"
+                        placeholder="Enter Voter Name / Voter Id Name">
+
+                    </div>
+                    <div class="col-sm-6">
+                        <fieldset id="group1" >
+                            <input type="radio" value="1" name="typeGroup" [(ngModel)]="type" checked="checked"> All
+                            <input type="radio" value="2" name="typeGroup" [(ngModel)]="type"> Booth Agents
+                            <input type="radio" value="3" name="typeGroup" [(ngModel)]="type"> Leader
+                            <input type="radio" value="4" name="typeGroup" [(ngModel)]="type"> VIP
+                        </fieldset>                      
+                    </div>
+
+                </div -->
+                <div class="row gap" id="buttons">
+                    <!--div class="col-sm-6 gap">
+                        <button type="reset" (click)="reset()" class="btn btn-default col-sm-3 col-xs-12 pull-right">Reset</button>
+                    </div-->
+                    <div class="col-sm-6 gap">
+                        <button type="button" (click)="sendIVR()" class="btn btn-warning col-sm-3 col-xs-12" id="go">Send IVR</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        
+    </div>
+
+<div>
+        <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+                <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+                <input #gt type="text" pInputText size="50" style="width:15% !important;" placeholder=" Global Filter">        
+                </div>
+
+</div>
+
+
+</div>
+<!-- /#page-wrapper -->
+
+</div>
