@@ -133,15 +133,15 @@ export class SendsmsComponent implements OnInit  {
     
 sendSMS()
 {
-  if(this.textMessage == undefined )
+  if(this.textMessage == undefined || this.textMessage.trim() == "" )
     alert("Enter a message");
   else {
     console.log('SendSMS');
     let reqString:string;
     console.log('xfv'+    this.limitDataValue);   
     if(this.limitDataValue == "Rural Mandal")
-    reqString = "Rural+Mandal";
-    else
+    //reqString = "Rural+Mandal";
+    //else
     reqString = this.limitDataValue;
 
    this.search.cid = this.assemblyDataValue;
